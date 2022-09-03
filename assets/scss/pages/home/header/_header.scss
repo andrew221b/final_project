@@ -46,6 +46,10 @@
     @include lg-min {
       grid-area: a;
     }
+
+    @include lg-md {
+      grid-area: b;
+    }
   }
 
   &-page {

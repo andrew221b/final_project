@@ -1,0 +1,124 @@
+@use "../../mixins" as *;
+@use "../../presets" as *;
+
+.about {}
+
+.about__flex {
+  display: flex;
+  margin: 82px 0px 79px 0px;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-description {
+  max-width: 641px;
+}
+
+.about-description__title {
+  margin-bottom: 20px;
+  font-size: 42px;
+  line-height: 50px;
+  @include gradient;
+}
+
+.about-description__text {
+  font-size: 21px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.about-stats {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid $color-grey-sep;
+  min-height: 307px;
+  gap: 40px;
+  margin-top: 10px;
+  max-width: 412px;
+  justify-content: space-evenly;
+}
+
+.about-stats__block {
+  padding-left: 21px;
+  margin-top: -5px;
+}
+
+.about-stats__number {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: bold;
+  @include gradient;
+  display: inline-block;
+}
+
+.flag::before {
+  content: url(../img/about_us/Flaf.svg);
+  padding-right: 10px;
+}
+
+.case::before {
+  content: url(../img/about_us/Case.svg);
+  padding-right: 10px;
+}
+
+.star::before {
+  content: url(../img/about_us/Star.svg);
+  padding-right: 9px;
+}
+
+.about-stats__text {
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-main;
+  padding-top: 9px;
+}
+
+.about-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+.about-banner__photo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-banner__photo-link>img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-banner__link {
+  position: absolute;
+  font-weight: 700;
+
+  line-height: 113px;
+
+  text-transform: uppercase;
+  color: #ffffff;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  text-shadow: 0px 15px 30px rgb(40 40 86 / 80%);
+
+
+  @include lg-min {
+    letter-spacing: 63px;
+    font-size: 96px;
+  }
+
+  @include lg-md {
+    letter-spacing: 45px;
+    font-size: 80px;
+  }
+
+  @include md-sm {
+    letter-spacing: 20px;
+    font-size: 55px;
+  }
+}

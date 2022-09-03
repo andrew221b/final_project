@@ -218,6 +218,203 @@ body {
   display: flex;
 }
 
+.about__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  margin: 82px 0 79px 0;
+
+  gap: 40px;
+}
+
+.about-description {
+  max-width: 641px;
+}
+
+.about-description__title {
+  margin-bottom: 20px;
+
+  background-color: #f0145a;
+  background-image: -o-linear-gradient(359.87deg, #f0145a 0.84%, #ef8080 99.96%);
+  background-image:    linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-size: 100%;
+
+  font-size: 42px;
+  line-height: 50px;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.about-description__text {
+  margin-bottom: 20px;
+
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.about-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+
+  max-width: 412px;
+  min-height: 307px;
+  margin-top: 10px;
+
+  border-left: 4px solid #e6e6f0;
+
+  gap: 40px;
+}
+
+.about-stats__block {
+  margin-top: -5px;
+  padding-left: 21px;
+}
+
+.about-stats__number {
+  display: inline-block;
+
+  background-color: #f0145a;
+  background-image: -o-linear-gradient(359.87deg, #f0145a 0.84%, #ef8080 99.96%);
+  background-image:    linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-size: 100%;
+
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.flag::before {
+  padding-right: 10px;
+
+  content: url(../img/about_us/Flaf.svg);
+}
+
+.case::before {
+  padding-right: 10px;
+
+  content: url(../img/about_us/Case.svg);
+}
+
+.star::before {
+  padding-right: 9px;
+
+  content: url(../img/about_us/Star.svg);
+}
+
+.about-stats__text {
+  padding-top: 9px;
+
+  color: #323264;
+
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.about-banner {
+  position: relative;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  margin-bottom: 80px;
+}
+
+.about-banner__photo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about-banner__photo-link > img {
+  width: 100%;
+
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-banner__link {
+  position: absolute;
+  top: 50%;
+  left: 52%;
+
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+
+  opacity: 0.8;
+  color: #ffffff;
+  text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
+
+  font-weight: 700;
+  line-height: 113px;
+}
+
+.quality__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  gap: 40px;
+}
+
+.quality__title {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+
+  max-width: 415px;
+
+  background-color: #f0145a;
+  background-image: -o-linear-gradient(359.87deg, #f0145a 0.84%, #ef8080 99.96%);
+  background-image:    linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-size: 100%;
+
+  font-size: 42px;
+  line-height: 50px;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.quality__text {
+  max-width: 640px;
+  margin-bottom: 20px;
+
+  font-size: 21px;
+  line-height: 30px;
+}
+
 @media (min-width: 992px) {
   .header__grid {
     display: grid;
@@ -239,6 +436,11 @@ body {
   }
   .header-action {
     grid-area: b;
+  }
+  .about-banner__link {
+    letter-spacing: 63px;
+
+    font-size: 96px;
   }
 }
 
@@ -265,8 +467,16 @@ body {
   .header__flex {
     grid-area: b;
   }
+  .header-logo {
+    grid-area: b;
+  }
   .header-menu {
     grid-area: b;
+  }
+  .about-banner__link {
+    letter-spacing: 45px;
+
+    font-size: 80px;
   }
 }
 
@@ -286,5 +496,10 @@ body {
     padding-top: 20px;
 
     gap: 10px;
+  }
+  .about-banner__link {
+    letter-spacing: 20px;
+
+    font-size: 55px;
   }
 }
