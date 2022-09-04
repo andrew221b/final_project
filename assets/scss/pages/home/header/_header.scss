@@ -2,6 +2,15 @@
 @use "../../../presets" as *;
 
 .header {
+
+  &__grid--abs {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
   &__grid {
 
     @include lg-min {
@@ -10,11 +19,12 @@
         "a b"
         "a c";
       padding-top: 45px;
+      grid-template-columns: auto 1fr;
     }
 
     @include lg-md {
       display: grid;
-      grid-template-areas: "a" "b";
+      grid-template-areas: "a""b";
       align-items: center;
       gap: 20px;
       padding-top: 20px;
@@ -61,7 +71,7 @@
 
   &-page::before {
     content: '';
-    background-image: url(../../../../../assets/img/header/Slash.svg);
+    background-image: url(../img/header/Slash.svg);
     display: inline-block;
     background-repeat: no-repeat;
     width: 20px;
@@ -70,7 +80,7 @@
 
   &-page::after {
     content: '';
-    background-image: url(../../../../../assets/img/header/SymbolSlash.svg);
+    background-image: url(../img/header/SymbolSlash.svg);
     display: inline-block;
     background-repeat: no-repeat;
     width: 45px;
@@ -133,17 +143,19 @@
       line-height: 14px;
       letter-spacing: 1px;
       padding: 5px 6px;
+
+      &.active {
+        background-color: $color-accent;
+        border-radius: 8px;
+        color: $color-white;
+      }
     }
 
-    &__link.active {
-      background-color: $color-accent;
-      border-radius: 8px;
-      color: $color-white;
-    }
 
     &__link:hover:not(.active) {
       background-color: $color-grey-alt;
       border-radius: 8px;
+      color: $color-grey-text;
     }
 
     &__locate {
@@ -171,17 +183,11 @@
 
   &-action>div:not(:last-child)::after {
     content: '';
-    background-image: url(../../../../../assets/img/header/DotSeparator.svg);
+    background-image: url(../img/header/DotSeparator.svg);
     display: inline-block;
     background-repeat: no-repeat;
     width: 6px;
     height: 6px;
     padding-bottom: 8px;
   }
-}
-
-.header-home {
-  height: 100vh;
-  background: linear-gradient(42.01deg, #323264 14.33%,
-      #323264 51.39%, #7A425E 87.53%);
 }

@@ -7,3 +7,12 @@
   -webkit-text-fill-color: transparent;
   background-size: 100%;
 }
+
+@mixin header-grid-lg {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "a c";
+  padding-top: 45px;
+  grid-template-columns: auto 1fr;
+}

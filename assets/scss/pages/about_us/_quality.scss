@@ -3,18 +3,50 @@
 
 .quality__flex {
   display: flex;
-  gap: 40px;
+justify-content: center;
+
+  @include md-min {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  @include md {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 .quality__title {
-  font-size: 42px;
-line-height: 50px;
+
 @include gradient;
 max-width: 415px;
 order: 1;
+
+@include md-min {
+  font-size: 42px;
+  line-height: 50px;
+  padding-top: 17px;
+}
+
+@include md {
+  font-size: 32px;
+line-height: 38px;
+margin-bottom: 39px;
+}
 }
 .quality__text {
   font-size: 21px;
 line-height: 30px;
 max-width: 640px;
-margin-bottom: 20px;
+padding-top: 20px;
+
+
+@include md-min {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+@include md {
+  font-size: 18px;
+line-height: 26px;
+}
 }

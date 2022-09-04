@@ -13,7 +13,7 @@
 <body>
   <header class="header header-home">
     <div class="container">
-      <div class="header__grid">
+      <div class="header__grid header__grid--abs container">
         <div class="header-logo">
           <a class="header-logo__pic" href="index.html">
             <img src="assets/img/header/LogoWhite.svg" alt="logo">
@@ -70,15 +70,15 @@
         </nav>
       </div>
 
-      <div class="header-content">
-        <div class="header-content__symbol">
-          <img class="header-content__img" src="assets/img/header/SymbolLongLeg.svg" alt="Symbol Long Leg">
+      <div class="header-home__content container">
+        <div class="header-home__symbol">
+          <img class="header-home__img" src="assets/img/header/SymbolLongLeg.svg" alt="Symbol Long Leg">
         </div>
 
-        <h1 class="header-content__title">системний адміністратор правових рішень</h1>
+        <h1 class="header-home__title">системний адміністратор правових рішень</h1>
       </div>
 
-      <div class="header-btn">
+      <div class="header-home__btn">
         <img src="assets/img/header/ScrollDown.svg" alt="down">
       </div>
 
@@ -90,7 +90,39 @@
 
   </main>
 
-  <footer></footer>
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__flex">
+        <div class="footer-contacts">
+          <address class="footer-contacts__adress">Одеса, Адміральський пр., 3</address>
+          <div class="footer-contacts__map">
+            <a class="footer-contacts__map-link" href="">Подивитися на мапі</a>
+          </div>
+          <div class="footer-contacts__social">
+            <a class="footer-contacts__social-link" href="">
+              <img src="../assets/img/footer/FacebookBlue.svg" alt="">
+            </a>
+          </div>
+          <div class="footer-contacts__tel">
+            <a class="footer-contacts__tel-link" href="tel:+380503901591">+38 (050) 390 15
+              91</a>
+          </div>
+
+          <div class="footer-contacts__mail">
+            <a class="footer-contacts__mail-link" href="mailto: contact@hlegals.net">
+              contact@hlegals.net
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          © 2021 ТОВ Юридична компанія «HLEGALS»
+        </div>
+      </div>
+
+    </div>
+  </footer>
 
 
 
