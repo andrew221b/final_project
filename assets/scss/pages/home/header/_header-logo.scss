@@ -1,0 +1,62 @@
+@use "../../../mixins" as *;
+@use "../../../presets" as *;
+
+.header-logo {
+  @include lg-min {
+    grid-area: a;
+  }
+
+  @include lg {
+    grid-area: b;
+  }
+
+  &__page {
+    font-size: 38px;
+    color: $color-main;
+    display: flex;
+
+    @include sm {
+      font-size: 19px;
+    }
+
+    &::before {
+      content: '';
+      background-image: url(../img/header/Slash.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include sm-min {
+        width: 20px;
+        height: 50px;
+      }
+
+      @include sm {
+        width: 12px;
+        height: 24px;
+      }
+    }
+
+    &::after {
+      content: '';
+      background-image: url(../img/header/SymbolSlash.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include sm-min {
+        width: 45px;
+        height: 50px;
+      }
+
+      @include sm {
+        width: 22px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.header-logo__pic>img {
+  @include sm {
+    width: 78px;
+  }
+}

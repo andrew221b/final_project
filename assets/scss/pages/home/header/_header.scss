@@ -2,7 +2,6 @@
 @use "../../../presets" as *;
 
 .header {
-
   &__grid--abs {
     position: absolute;
     z-index: 2;
@@ -12,9 +11,9 @@
   }
 
   &__grid {
+    display: grid;
 
     @include lg-min {
-      display: grid;
       grid-template-areas:
         "a b"
         "a c";
@@ -23,7 +22,6 @@
     }
 
     @include lg-md {
-      display: grid;
       grid-template-areas: "a""b";
       align-items: center;
       gap: 20px;
@@ -34,6 +32,15 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      justify-items: start;
+      padding-top: 20px;
+      gap: 10px;
+    }
+
+    @include sm {
+      grid-template-areas:
+        "a"
+        "b";
       padding-top: 20px;
       gap: 10px;
     }
@@ -46,148 +53,8 @@
       grid-area: a;
     }
 
-    @include lg-md {
+    @include lg {
       grid-area: b;
     }
-  }
-
-  &-logo {
-
-    @include lg-min {
-      grid-area: a;
-    }
-
-    @include lg-md {
-      grid-area: b;
-    }
-  }
-
-  &-page {
-    font-size: 38px;
-    line-height: 45px;
-    color: $color-main;
-    display: flex;
-  }
-
-  &-page::before {
-    content: '';
-    background-image: url(../img/header/Slash.svg);
-    display: inline-block;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 50px;
-  }
-
-  &-page::after {
-    content: '';
-    background-image: url(../img/header/SymbolSlash.svg);
-    display: inline-block;
-    background-repeat: no-repeat;
-    width: 45px;
-    height: 50px;
-  }
-
-  &-menu {
-
-    @include lg-min {
-      grid-area: c;
-      padding-top: 14px;
-    }
-
-    @include lg-md {
-      grid-area: b;
-    }
-
-    &__list {
-      display: flex;
-      gap: 15px;
-      justify-content: flex-end;
-    }
-
-    &__link {
-      font-size: 18px;
-      line-height: 21px;
-    }
-
-    &__link.active {
-      border-bottom: 2px solid;
-      color: $color-accent;
-    }
-
-    &__link:hover {
-      color: $color-accent;
-    }
-
-    &__link--dark {
-      color: $color-action-reg;
-    }
-  }
-
-  &-action {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 9px;
-
-    @include lg-min {
-      grid-area: b;
-    }
-
-    @include lg-sm {
-      order: -1;
-    }
-
-    &__link {
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 1px;
-      padding: 5px 6px;
-
-      &.active {
-        background-color: $color-accent;
-        border-radius: 8px;
-        color: $color-white;
-      }
-    }
-
-
-    &__link:hover:not(.active) {
-      background-color: $color-grey-alt;
-      border-radius: 8px;
-      color: $color-grey-text;
-    }
-
-    &__locate {
-      font-size: 16px;
-      line-height: 19px;
-    }
-
-    &__locate-link,
-    &__tel-link {
-      margin-right: 7px;
-    }
-
-    &__tel {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 19px;
-    }
-
-    &__link--dark,
-    &__locate-link--dark,
-    &__tel-link--dark {
-      color: $color-grey-text;
-    }
-  }
-
-  &-action>div:not(:last-child)::after {
-    content: '';
-    background-image: url(../img/header/DotSeparator.svg);
-    display: inline-block;
-    background-repeat: no-repeat;
-    width: 6px;
-    height: 6px;
-    padding-bottom: 8px;
   }
 }

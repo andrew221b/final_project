@@ -25,10 +25,11 @@ button {
 html {
   font-size: $font-size;
   font-weight: 400;
+  font-family: $font-primary;
 }
 
 body {
-  font-family: $font-primary;
   margin: 0;
   padding: 0;
+  line-height: 1.2;
 }

@@ -22,7 +22,7 @@
   display: flex;
 
     flex-wrap: wrap;
-    column-gap: 10px;
+    column-gap: 29px;
 
 
     @include md-min {
@@ -45,23 +45,9 @@
   line-height: 19px;
   color: $color-main;
   font-weight: 500;
+  font-style: normal;
 }
-.footer-contacts__map::before,
-.footer-contacts__tel::before,
-.footer-contacts__mail::before{
 
-  @include md-min {
-    content: '';
-    background-image: url(../img/header/DotSeparator.svg);
-    display: inline-block;
-    background-repeat: no-repeat;
-    width: 6px;
-    height: 6px;
-    padding-bottom: 8px;
-    padding-right: 15px;
-  }
-
-}
 
 .footer-contacts__map {
   padding-left: 4px;
