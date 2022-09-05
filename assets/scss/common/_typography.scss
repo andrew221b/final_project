@@ -32,4 +32,33 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.2;
+
+  &::before {
+    position: absolute;
+    z-index: -10;
+    top: 0px;
+    right: 0px;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    content: "";
+    transition: opacity 1s;
+    opacity: 0;
+    background-color: #010101;
+  }
+
+  &.burger {
+    overflow-y: hidden;
+
+    transition: transform 0.5s;
+
+    &::before {
+      z-index: 3;
+
+      height: 100%;
+
+      opacity: 0.85;
+    }
+  }
 }
+
