@@ -201,7 +201,19 @@ body.burger::before {
 }
 
 .experience-slider__title {
+  position: relative;
+
   color: #b3b3ba;
+}
+.experience-slider__title.active {
+  background: -webkit-gradient(linear, left top, right top, color-stop(33%, #ef8080), color-stop(99.96%, #f0145a));
+  background: -o-linear-gradient(left, #ef8080 33%, #f0145a 99.96%);
+  background:    linear-gradient(90deg, #ef8080 33%, #f0145a 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+          text-fill-color: transparent;
 }
 
 .experience-slider__notes {
@@ -219,11 +231,34 @@ body.burger::before {
 }
 
 .experience-slider__note {
-  position: absolute;
+  display: none;
+}
+.experience-slider__note.active {
+  display: block;
 }
 
-.experience-slider_text {
+.experience-slider__subtitle {
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}
+
+.experience-slider__text {
+  color: #ffffff;
+
   line-height: 30px;
+}
+
+.experience-slider__indicator {
+  width: 16px;
+  height: 16px;
+
+  opacity: 0.2;
+  border-radius: 8px;
+  background: #006ccf;
+}
+.experience-slider__indicator.active {
+  opacity: 1;
 }
 
 .services {
@@ -323,6 +358,58 @@ body.burger::before {
 }
 .services-item__description {
   color: #ffffff;
+}
+
+.quote__title {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+}
+
+.quote__flex {
+  border-radius: 12px;
+  background: #f5f5fa;
+}
+
+.quote__content {
+  background-color: #f0145a;
+  background-image: -o-linear-gradient(359.87deg, #f0145a 0.84%, #ef8080 99.96%);
+  background-image:    linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-size: 100%;
+
+  font-size: 42px;
+  font-weight: 700;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.quote__name {
+  color: #b3b3ba;
+
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.quote__position {
+  color: #b3b3ba;
+
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .header__grid--abs {
@@ -958,17 +1045,48 @@ body.burger::before {
   .experience-slider {
     gap: 80px;
   }
+  .experience-slider__titles::after {
+    position: absolute;
+    right: -42px;
+
+    width: 4px;
+    height: 100%;
+
+    content: "";
+
+    background-color: #e6e6f0;
+  }
   .experience-slider__title {
+    text-align: right;
+
     font-size: 42px;
     line-height: 50px;
   }
-  .experience-slider__subtitle {
-    color: #ffffff;
+  .experience-slider__title.active::after {
+    position: absolute;
+    z-index: 1;
+    right: -42px;
 
+    width: 4px;
+    height: 100%;
+
+    content: "";
+
+    background-color: #f0145a;
+  }
+  .experience-slider__note {
+    position: absolute;
+
+    max-width: 600px;
+  }
+  .experience-slider__subtitle {
     font-size: 32px;
   }
-  .experience-slider_text {
+  .experience-slider__text {
     font-size: 21px;
+  }
+  .experience-slider__indicators {
+    display: none;
   }
   .services__title {
     margin-bottom: 60px;
@@ -1008,6 +1126,9 @@ body.burger::before {
   }
 }
 @media (max-width: 991.8px) {
+  .experience {
+    padding-top: 40px;
+  }
   .experience-slider {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1026,18 +1147,40 @@ body.burger::before {
     letter-spacing: 1px;
     text-transform: uppercase;
 
+    background: -webkit-gradient(linear, left top, right top, color-stop(33%, #ef8080), color-stop(99.96%, #f0145a));
+    background: -o-linear-gradient(left, #ef8080 33%, #f0145a 99.96%);
+    background:    linear-gradient(90deg, #ef8080 33%, #f0145a 99.96%);
+    -webkit-background-clip: text;
+            background-clip: text;
+
     font-size: 14px;
     line-height: 17px;
+
+    -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+  }
+  .experience-slider__title.active {
+    display: block;
   }
   .experience-slider__subtitle {
     margin-bottom: 15px;
 
     font-size: 22px;
   }
-  .experience-slider_text {
+  .experience-slider__text {
     margin-bottom: 20px;
 
     font-size: 18px;
+  }
+  .experience-slider__indicators {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    gap: 14px;
   }
   .services__title {
     margin-bottom: 40px;

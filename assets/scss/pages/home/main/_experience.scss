@@ -7,6 +7,10 @@
     padding-top: 80px;
   }
 
+  @include lg {
+    padding-top: 40px;
+  }
+
   background-color: $color-main;
 }
 
@@ -25,17 +29,34 @@
 .experience-slider__titles {
   position: relative;
   display: flex;
-  flex-basis: 0;
   flex-direction: column;
+  flex-basis: 0;
   flex-grow: 2;
   gap: 20px;
+
+
+@include lg-min {
+  &::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: $color-grey-sep;
+    right: -42px;
+  }
+}
+
+
 }
 
 .experience-slider__title {
+  color: $color-grey-text;
+  position: relative;
 
   @include lg-min {
     font-size: 42px;
     line-height: 50px;
+    text-align: right;
   }
 
   @include lg {
@@ -47,9 +68,38 @@
     text-transform: uppercase;
     font-size: 14px;
     line-height: 17px;
+
+    background: linear-gradient(90deg, #EF8080 33%, #F0145A 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 
-  color: $color-grey-text;
+
+  &.active {
+    background: linear-gradient(90deg, #EF8080 33%, #F0145A 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    @include lg-min {
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 4px;
+        height: 100%;
+        background-color: $color-accent;
+        right: -42px;
+      }
+    }
+
+    @include lg {
+      display: block;
+    }
+  }
 }
 
 .experience-slider__notes {
@@ -60,14 +110,27 @@
 }
 
 .experience-slider__note {
-  position: absolute;
+
+  display: none;
+
+
+  @include lg-min {
+    max-width: 600px;
+    position: absolute;
+  }
+
+  &.active {
+    display: block;
+  }
 }
 
 .experience-slider__subtitle {
+  color: $color-white;
+  margin-bottom: 20px;
 
   @include lg-min {
     font-size: 32px;
-    color: $color-white;
+
   }
 
   @include lg {
@@ -76,8 +139,9 @@
   }
 }
 
-.experience-slider_text {
+.experience-slider__text {
   line-height: 30px;
+  color: $color-white;
 
   @include lg-min {
     font-size: 21px;
@@ -89,10 +153,27 @@
   }
 }
 
+.experience-slider__indicators {
 
+  @include lg-min {
+    display: none;
+  }
 
+  @include lg {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+  }
+}
 
+.experience-slider__indicator {
+width: 16px;
+height: 16px;
+opacity: 0.2;
+background: $color-action-active;
+border-radius: 8px;
 
-
-
-
+&.active {
+  opacity: 1;
+}
+}
