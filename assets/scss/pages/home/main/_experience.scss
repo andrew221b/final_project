@@ -1,7 +1,6 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
-
 .experience {
 
   @include lg-min {
@@ -9,10 +8,7 @@
   }
 
   background-color: $color-main;
-
 }
-
-.container {}
 
 .experience-slider {
   display: flex;
@@ -49,12 +45,11 @@
     white-space: nowrap;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 14;
+    font-size: 14px;
     line-height: 17px;
   }
 
   color: $color-grey-text;
-
 }
 
 .experience-slider__notes {
@@ -79,7 +74,6 @@
     margin-bottom: 15px;
     font-size: 22px;
   }
-
 }
 
 .experience-slider_text {
@@ -94,8 +88,6 @@
     font-size: 18px;
   }
 }
-
-.experience-slider__indicators {}
 
 
 

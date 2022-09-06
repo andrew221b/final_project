@@ -1,178 +1,168 @@
 @use "../../mixins" as *;
 @use "../../presets" as *;
 
-.about {}
+.about {
+  &__flex {
+    display: flex;
+    justify-content: center;
 
-.about__flex {
-  display: flex;
+    @include md-min {
+      flex-direction: row;
+      gap: 40px;
+      margin: 82px 0px 79px 0px;
+    }
 
-  justify-content: center;
-
-
-  @include md-min {
-    flex-direction: row;
-    gap: 40px;
-    margin: 82px 0px 79px 0px;
+    @include md {
+      flex-direction: column;
+      gap: 20px;
+      margin: 41px 0px 15px 0px;
+    }
   }
 
-  @include md {
+  &-description {
+    @include lg-min {
+      max-width: 641px;
+    }
+
+    @include lg-md {
+      max-width: 500px;
+    }
+
+    @include md {
+      max-width: 750px;
+    }
+
+    &__title {
+      @include gradient;
+
+      @include sm-min {
+        font-size: 42px;
+        line-height: 50px;
+      }
+
+      @include sm {
+        font-size: 32px;
+      line-height: 38px;
+      }
+    }
+
+    &__text {
+      padding-top: 20px;
+
+      @include sm-min {
+        font-size: 21px;
+        line-height: 30px;
+      }
+
+      @include sm {
+        font-size: 18px;
+      line-height: 26px;
+      }
+    }
+  }
+
+  &-stats {
+    display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin: 41px 0px 15px 0px;
-  }
-}
+    min-height: 307px;
+    justify-content: space-evenly;
 
-.about-description {
+    @include md-min {
+      border-left: 4px solid $color-grey-sep;
+      max-width: 412px;
+      gap: 40px;
+    }
 
-  @include lg-min {
-    max-width: 641px;
-  }
+    @include md {
+      border-top: 4px solid $color-grey-sep;
+      flex-direction: column;
+      max-width: 100%;
+    }
 
-  @include lg-md {
-    max-width: 500px;
-  }
+    &__block {
+      @include md-min {
+        padding-left: 21px;
+      }
+    }
 
-  @include md {
-    max-width: 750px;
-  }
-}
+    &__number {
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: bold;
+      @include gradient;
+      display: inline-block;
 
-.about-description__title {
+      &.flag::before {
+        content: url(../img/about_us/Flaf.svg);
+        padding-right: 10px;
+      }
 
-  @include gradient;
+      &.case::before {
+        content: url(../img/about_us/Case.svg);
+        padding-right: 10px;
+      }
 
-  @include sm-min {
-    font-size: 42px;
-    line-height: 50px;
-  }
+      &.star::before {
+        content: url(../img/about_us/Star.svg);
+        padding-right: 9px;
+      }
+    }
 
-  @include sm {
-    font-size: 32px;
-  line-height: 38px;
-  }
-  
-}
-
-.about-description__text {
-  padding-top: 20px;
-
-  @include sm-min {
-    font-size: 21px;
-    line-height: 30px;
-  }
-
-  @include sm {
-    font-size: 18px;
-  line-height: 26px;
-  }
-}
-
-.about-stats {
-  display: flex;
-  flex-direction: column;
-  min-height: 307px;
-  justify-content: space-evenly;
-
-  @include md-min {
-    border-left: 4px solid $color-grey-sep;
-    max-width: 412px;
-    gap: 40px;
+    &__text {
+      font-size: 18px;
+      line-height: 21px;
+      color: $color-main;
+      padding-top: 9px;
+    }
   }
 
-  @include md {
-    border-top: 4px solid $color-grey-sep;
-    flex-direction: column;
-    max-width: 100%;
-  }
-}
+  &-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 
-.about-stats__block {
+    @include md-min {
+      margin-bottom: 60px;
+    }
 
-  @include md-min {
-    padding-left: 21px;
-  }
-}
+    &__photo-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.about-stats__number {
-  font-size: 36px;
-  line-height: 42px;
-  font-weight: bold;
-  @include gradient;
-  display: inline-block;
-}
+    &__photo-link>img {
+      width: 100%;
+      object-fit: cover;
+    }
 
-.flag::before {
-  content: url(../img/about_us/Flaf.svg);
-  padding-right: 10px;
-}
+    &__link {
+      position: absolute;
+      font-weight: 700;
+      line-height: 113px;
+      text-transform: uppercase;
+      color: #ffffff;
+      top: 50%;
+      left: 52%;
+      transform: translate(-50%, -50%);
+      opacity: 0.8;
+      text-shadow: 0px 15px 30px rgb(40 40 86 / 80%);
 
-.case::before {
-  content: url(../img/about_us/Case.svg);
-  padding-right: 10px;
-}
+      @include lg-min {
+        letter-spacing: 63px;
+        font-size: 96px;
+      }
 
-.star::before {
-  content: url(../img/about_us/Star.svg);
-  padding-right: 9px;
-}
+      @include lg-md {
+        letter-spacing: 45px;
+        font-size: 80px;
+      }
 
-.about-stats__text {
-  font-size: 18px;
-  line-height: 21px;
-  color: $color-main;
-  padding-top: 9px;
-}
-
-.about-banner {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-
-
-  @include md-min {
-    margin-bottom: 80px;
-  }
-}
-
-.about-banner__photo-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-banner__photo-link>img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.about-banner__link {
-  position: absolute;
-  font-weight: 700;
-
-  line-height: 113px;
-
-  text-transform: uppercase;
-  color: #ffffff;
-  top: 50%;
-  left: 52%;
-  transform: translate(-50%, -50%);
-  opacity: 0.8;
-  text-shadow: 0px 15px 30px rgb(40 40 86 / 80%);
-
-
-  @include lg-min {
-    letter-spacing: 63px;
-    font-size: 96px;
-  }
-
-  @include lg-md {
-    letter-spacing: 45px;
-    font-size: 80px;
-  }
-
-  @include md-sm {
-    letter-spacing: 20px;
-    font-size: 55px;
+      @include md-sm {
+        letter-spacing: 20px;
+        font-size: 55px;
+      }
+    }
   }
 }

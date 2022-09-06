@@ -1,52 +1,55 @@
 @use "../../mixins" as *;
 @use "../../presets" as *;
 
-.quality__flex {
-  display: flex;
-justify-content: center;
+.quality {
+  margin-bottom: 40px;
 
-  @include md-min {
-    flex-direction: row;
-    gap: 40px;
+  &__flex {
+    display: flex;
+    justify-content: center;
+
+    @include md-min {
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    @include md {
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 
-  @include md {
-    flex-direction: column;
-    gap: 16px;
+  &__title {
+    @include gradient;
+    max-width: 415px;
+    order: 1;
+
+    @include md-min {
+      font-size: 42px;
+      line-height: 50px;
+      padding-top: 17px;
+    }
+
+    @include md {
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
-}
-.quality__title {
 
-@include gradient;
-max-width: 415px;
-order: 1;
+  &__text {
+    font-size: 21px;
+    line-height: 30px;
+    max-width: 640px;
+    padding-top: 20px;
 
-@include md-min {
-  font-size: 42px;
-  line-height: 50px;
-  padding-top: 17px;
-}
+    @include md-min {
+      font-size: 21px;
+      line-height: 30px;
+    }
 
-@include md {
-  font-size: 32px;
-line-height: 38px;
-margin-bottom: 39px;
-}
-}
-.quality__text {
-  font-size: 21px;
-line-height: 30px;
-max-width: 640px;
-padding-top: 20px;
-
-
-@include md-min {
-  font-size: 21px;
-  line-height: 30px;
-}
-
-@include md {
-  font-size: 18px;
-line-height: 26px;
-}
+    @include md {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
 }

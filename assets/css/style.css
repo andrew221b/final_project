@@ -263,11 +263,9 @@ body.burger::before {
   border-radius: 0 0 12px 12px;
   background: #e7e7f2;
 }
-
 .services__link-wrap {
   position: relative;
 }
-
 .services__link {
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -289,12 +287,11 @@ body.burger::before {
 
   content: "";
 
-  background-image: url(../../../../../assets/img/home/services/LinkArrow.svg);
+  background-image: url(../img/home/services/LinkArrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-.services-title {
+.services__title {
   background-color: #f0145a;
   background-image: -o-linear-gradient(359.87deg, #f0145a 0.84%, #ef8080 99.96%);
   background-image:    linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
@@ -304,22 +301,18 @@ body.burger::before {
 
   -webkit-text-fill-color: transparent;
 }
-
 .services__grid {
   display: grid;
 }
-
 .services-item {
   display: grid;
 
   gap: 15px;
   grid-template-rows: auto auto 1fr;
 }
-
 .services-item__title-link {
   color: #24a3ff;
 }
-
 .services-item__pic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,7 +321,6 @@ body.burger::before {
   -ms-flex-order: -1;
   order: -1;
 }
-
 .services-item__description {
   color: #ffffff;
 }
@@ -384,7 +376,6 @@ body.burger::before {
   background: -o-linear-gradient(top, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
   background:    linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
 }
-
 .header-home__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,7 +389,6 @@ body.burger::before {
 
   min-height: 100vh;
 }
-
 .header-home__symbol {
   position: absolute;
   bottom: 0;
@@ -407,7 +397,6 @@ body.burger::before {
       -ms-transform: translateY(8%);
           transform: translateY(8%);
 }
-
 .header-home__title {
   position: relative;
 
@@ -421,7 +410,6 @@ body.burger::before {
   font-weight: 500;
   line-height: 45px;
 }
-
 .header-home__btn {
   position: absolute;
   z-index: 2;
@@ -477,11 +465,15 @@ body.burger::before {
   border-radius: 8px;
   background-color: #ededf7;
 }
+.header-action__lang-link--dark {
+  color: #b3b3ba;
+}
+.header-action__locate-link--dark {
+  color: #b3b3ba;
+}
 .header-action__tel {
   font-weight: 700;
 }
-.header-action__lang-link--dark,
-.header-action__locate-link--dark,
 .header-action__tel-link--dark {
   color: #b3b3ba;
 }
@@ -666,7 +658,6 @@ body.burger::before {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
 .about-description__title {
   background-color: #f0145a;
   background-image: -o-linear-gradient(359.87deg, #f0145a 0.84%, #ef8080 99.96%);
@@ -677,11 +668,9 @@ body.burger::before {
 
   -webkit-text-fill-color: transparent;
 }
-
 .about-description__text {
   padding-top: 20px;
 }
-
 .about-stats {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -696,7 +685,6 @@ body.burger::before {
 
   min-height: 307px;
 }
-
 .about-stats__number {
   display: inline-block;
 
@@ -713,25 +701,21 @@ body.burger::before {
 
   -webkit-text-fill-color: transparent;
 }
-
-.flag::before {
+.about-stats__number.flag::before {
   padding-right: 10px;
 
   content: url(../img/about_us/Flaf.svg);
 }
-
-.case::before {
+.about-stats__number.case::before {
   padding-right: 10px;
 
   content: url(../img/about_us/Case.svg);
 }
-
-.star::before {
+.about-stats__number.star::before {
   padding-right: 9px;
 
   content: url(../img/about_us/Star.svg);
 }
-
 .about-stats__text {
   padding-top: 9px;
 
@@ -740,7 +724,6 @@ body.burger::before {
   font-size: 18px;
   line-height: 21px;
 }
-
 .about-banner {
   position: relative;
 
@@ -752,7 +735,6 @@ body.burger::before {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
 .about-banner__photo-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -764,14 +746,12 @@ body.burger::before {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
 .about-banner__photo-link > img {
   width: 100%;
 
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .about-banner__link {
   position: absolute;
   top: 50%;
@@ -790,6 +770,9 @@ body.burger::before {
   line-height: 113px;
 }
 
+.quality {
+  margin-bottom: 40px;
+}
 .quality__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -798,7 +781,6 @@ body.burger::before {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
 .quality__title {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
@@ -815,7 +797,6 @@ body.burger::before {
 
   -webkit-text-fill-color: transparent;
 }
-
 .quality__text {
   max-width: 640px;
   padding-top: 20px;
@@ -828,7 +809,6 @@ body.burger::before {
   border-radius: 12px 12px 0 0;
   background-color: #f5f5fa;
 }
-
 .achievements__title {
   padding: 28px;
 
@@ -841,15 +821,12 @@ body.burger::before {
   font-size: 14px;
   line-height: 17px;
 }
-
 .achievements__grid {
   display: grid;
 }
-
 .achievements__item-img {
   width: 100%;
 }
-
 .achievements__slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,7 +841,6 @@ body.burger::before {
 
   gap: 14px;
 }
-
 .achievements__slider-dot {
   width: 16px;
   height: 16px;
@@ -947,7 +923,7 @@ body.burger::before {
     padding-left: 21px;
   }
   .about-banner {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
   .quality__flex {
     -webkit-box-orient: horizontal;
@@ -974,9 +950,6 @@ body.burger::before {
   .achievements__item.non-visible {
     display: block;
   }
-  .non-visible {
-    display: none;
-  }
 }
 @media (min-width: 992px) {
   .experience {
@@ -997,7 +970,7 @@ body.burger::before {
   .experience-slider_text {
     font-size: 21px;
   }
-  .services-title {
+  .services__title {
     margin-bottom: 60px;
 
     font-size: 42px;
@@ -1053,7 +1026,7 @@ body.burger::before {
     letter-spacing: 1px;
     text-transform: uppercase;
 
-    font-size: 14;
+    font-size: 14px;
     line-height: 17px;
   }
   .experience-slider__subtitle {
@@ -1066,7 +1039,7 @@ body.burger::before {
 
     font-size: 18px;
   }
-  .services-title {
+  .services__title {
     margin-bottom: 40px;
 
     font-size: 32px;
@@ -1183,8 +1156,6 @@ body.burger::before {
     gap: 16px;
   }
   .quality__title {
-    margin-bottom: 39px;
-
     font-size: 32px;
     line-height: 38px;
   }
@@ -1198,9 +1169,6 @@ body.burger::before {
   }
   .achievements__item.non-visible {
     display: none;
-  }
-  .non-visible {
-    display: block;
   }
 }
 @media (max-width: 819.8px) and (min-width: 600px) {

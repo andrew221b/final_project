@@ -53,11 +53,10 @@
       }
     }
   }
-}
 
-.header-logo__pic>img {
-  @include sm {
-    width: 78px;
+  &__pic>img {
+    @include sm {
+      width: 78px;
+    }
   }
 }
-

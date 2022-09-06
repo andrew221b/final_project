@@ -14,7 +14,7 @@
   @include lg {
     order: -1;
     justify-content: flex-start;
-    
+
     a {
       color: $color-grey-text;
     }
@@ -48,11 +48,19 @@
       border-radius: 8px;
       color: $color-grey-text;
     }
+
+    &--dark {
+      color: $color-grey-text;
+    }
   }
 
   &__locate {
     @include sm {
       display: none;
+    }
+
+    &-link--dark {
+      color: $color-grey-text;
     }
   }
 
@@ -64,11 +72,9 @@
 
   &__tel {
     font-weight: 700;
-  }
 
-  &__lang-link--dark,
-  &__locate-link--dark,
-  &__tel-link--dark {
-    color: $color-grey-text;
+    &-link--dark {
+      color: $color-grey-text;
+    }
   }
 }

@@ -3,74 +3,67 @@
 
 .achievements {
   background-color: $color-grey-bg;
-    border-radius: 12px 12px 0px 0px;
+  border-radius: 12px 12px 0px 0px;
 
-}
-.achievements__title {
-  font-size: 14px;
-line-height: 17px;
-text-align: center;
-letter-spacing: 1px;
-text-transform: uppercase;
-color: $color-main;
-padding: 28px;
-}
-.achievements__grid {
-  display: grid;
-
-
-  @include md-min {
-    gap: 40px;
-    grid-template-columns: repeat(4, 1fr);
+  &__title {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-main;
+    padding: 28px;
   }
 
+  &__grid {
+    display: grid;
+
+    @include md-min {
+      gap: 40px;
+      grid-template-columns: repeat(4, 1fr);
+    }
 
     @include md {
       gap: 40px;
-    grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-}
-.achievements__item.non-visible {
-
-  @include md-min {
-    display: block;
   }
 
-  @include md {
-    display: none;
+  &__item {
+
+    &.non-visible {
+      @include md-min {
+        display: block;
+      }
+
+      @include md {
+        display: none;
+      }
+    }
+
+    &-img {
+      width: 100%;
+    }
   }
-}
-.achievements__item-link {
-}
-.achievements__item-img {
-  width: 100%;
-}
-.achievements__slider {
-  display: flex;
+
+  &__slider {
+    display: flex;
     justify-content: center;
     padding: 30px;
     gap: 14px;
     border-bottom: 4px solid #e6e6f0;
-}
-.achievements__slider-dot {
-  width: 16px;
-    height: 16px;
-    opacity: 0.2;
-    border-radius: 8px;
-    border: none;
-    background-color: $color-action-reg;
 
-    &.active {
-      opacity: 1;
+    &-dot {
+      width: 16px;
+      height: 16px;
+      opacity: 0.2;
+      border-radius: 8px;
+      border: none;
+      background-color: $color-action-reg;
+
+      &.active {
+        opacity: 1;
+      }
     }
-}
-
-.non-visible {
-  @include md-min {
-    display: none;
-  }
-
-  @include md {
-    display: block;
   }
 }
