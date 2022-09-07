@@ -1,6 +1,7 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
+
 .experience {
 
   @include lg-min {
@@ -45,8 +46,6 @@
     right: -42px;
   }
 }
-
-
 }
 
 .experience-slider__title {
@@ -93,6 +92,7 @@
         height: 100%;
         background-color: $color-accent;
         right: -42px;
+        top: 0;
       }
     }
 

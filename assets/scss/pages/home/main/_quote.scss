@@ -2,6 +2,8 @@
 @use "../../../mixins" as *;
 
 .quote {
+  padding-top: 60px;
+
 
   &__title {
     position: absolute;
@@ -15,32 +17,135 @@
     border: 0;
     clip-path: inset(100%);
   }
+
+  &__slider {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 14px;
+    position: relative;
+
+
+    &-dot {
+      width: 16px;
+      height: 16px;
+      opacity: 0.2;
+      border-radius: 8px;
+      border: none;
+      background-color: $color-action-reg;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .quote__flex {
   background: $color-grey-bg;
-border-radius: 12px;
+  border-radius: 12px;
+  display: flex;
+  gap: 40px;
+
+  @include lg {
+    padding: 20px;
+  }
 }
+
 .quote__pic {
+  @include lg {
+    display: none;
+  }
 }
-.quote__img {
-}
+
+
+.quote__img {}
+
 .quote__link-wrap {
+  position: relative;
 }
+
 .quote__link {
-}
-.quote__content {
   font-weight: 700;
-font-size: 42px;
-@include gradient;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color-action-reg;
+
+  &::after {
+    content: '';
+    background-image: url(../img/home/services/LinkArrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 83px;
+    top: 4px;
+    filter: invert(65%) sepia(48%) saturate(950%) hue-rotate(184deg) brightness(165%) contrast(101%);
+  }
 }
+
+.quote__content {
+  display: flex;
+  flex-direction: column;
+
+  @include lg-min {
+    padding-top: 40px;
+  }
+
+  @include lg {
+    gap: 7px;
+  }
+
+}
+
+.quote__text {
+  font-weight: 700;
+
+  @include gradient;
+  max-width: 90%;
+
+  @include lg-min {
+    font-size: 42px;
+  }
+
+  @include lg {
+    font-size: 32px;
+  }
+}
+
 .quote__name {
   font-size: 18px;
-line-height: 21px;
-color: $color-grey-text;
+  line-height: 21px;
+  color: $color-grey-text;
+  position: relative;
+
+
+  @include lg-min {
+    padding-top: 20px;
+  }
 }
+
 .quote__position {
   font-size: 16px;
-line-height: 22px;
-color: $color-grey-text;
+  line-height: 22px;
+  color: $color-grey-text;
+  padding-top: 6px;
+
+}
+
+.quote__member-pic {
+  @include lg-min {
+    display: none;
+  }
+}
+
+.quote__member {
+  @include lg {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
 }

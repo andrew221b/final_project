@@ -36,6 +36,7 @@
     font-size: 12px;
     letter-spacing: 1px;
     padding: 5px 6px;
+    transition: .25s;
 
     &.active {
       background-color: $color-accent;
@@ -65,6 +66,11 @@
   }
 
   &__socials {
+
+    &:hover {
+      filter: invert(54%) sepia(41%) saturate(3386%) hue-rotate(181deg) brightness(100%) contrast(102%);
+    }
+
     @include sm {
       display: none;
     }

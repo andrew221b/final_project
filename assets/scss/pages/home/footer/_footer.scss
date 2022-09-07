@@ -2,13 +2,15 @@
 @use "../../../presets" as *;
 
 .footer {
-  padding: 29px 0 39px;
+  padding-bottom: 39px;
   background-color: $color-grey-bg;
 }
 
 .footer__flex {
   display: flex;
   justify-content: space-between;
+  border-top: 4px solid $color-grey-sep;
+  padding-top: 29px;
 
   @include sm {
     flex-direction: column;
@@ -21,27 +23,28 @@
 .footer-contacts {
   display: flex;
 
-    flex-wrap: wrap;
-    column-gap: 29px;
+  flex-wrap: wrap;
+  column-gap: 29px;
 
 
-    @include md-min {
-      row-gap: 22px;
-      flex-basis: 450px;
-      align-items: center;
-    }
+  @include md-min {
+    row-gap: 22px;
+    flex-basis: 450px;
+    align-items: center;
+  }
 
-    @include md {
-      flex-direction: column;
-      row-gap: 10px;
-      align-items: flex-start;
-    }
+  @include md {
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+  }
 
-    @include sm {
-      align-items: center;
-    }
+  @include sm {
+    align-items: center;
+  }
 
 }
+
 .footer-contacts__adress {
   line-height: 19px;
   color: $color-main;
@@ -54,34 +57,54 @@
 .footer-contacts__map {
   padding-left: 4px;
 }
+
 .footer-contacts__map-link {
   font-weight: bold;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 1px;
-text-transform: uppercase;
-color: $color-action-reg;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color-action-reg;
+  transition: .25s;
+
+  &:hover {
+    color: $color-accent;
+  }
 }
+
 .footer-contacts__social {
+
+
+  &:hover {
+    filter: invert(1000%) sepia(59%) saturate(1000%) hue-rotate(332deg) brightness(96%) contrast(95%);
+  }
 }
-.footer-contacts__social-link {
-}
-.footer-contacts__tel {
-}
+
+.footer-contacts__social-link {}
+
+.footer-contacts__tel {}
+
 .footer-contacts__tel-link {
   font-weight: bold;
-font-size: 16px;
-line-height: 19px;
-color: $color-main-alt;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-main-alt;
 }
-.footer-contacts__mail {
-}
+
+.footer-contacts__mail {}
+
 .footer-contacts__mail-link {
+  transition: .25s;
   font-weight: bold;
   line-height: 19px;
-letter-spacing: 1px;
-color: $color-action-reg;
+  letter-spacing: 1px;
+  color: $color-action-reg;
+
+  &:hover {
+    color: $color-accent;
+  }
 }
+
 .footer-copyright {
   line-height: 19px;
   color: $color-grey-text;

@@ -7,6 +7,7 @@
   position: relative;
   overflow: hidden;
 
+@include md-min {
   &::before {
     content: "";
     @include abs-pos;
@@ -15,6 +16,9 @@
     background-position: 50% 100%;
     background-size: 88vh;
   }
+}
+
+
 
   &::after {
     content: "";
@@ -32,7 +36,8 @@
   &__symbol {
     transform: translateY(8%);
     position: absolute;
-    bottom: 0;
+    bottom: 90px;
+    scale: 1.2;
   }
 
   &__title {

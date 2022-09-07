@@ -1,0 +1,83 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+
+.casses {}
+
+.cases__grid {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: 25% 8% 25% 8% 2fr;
+  grid-template-rows: 15% 1fr 1fr;
+  grid-template-areas: 'cases cases i2 i2 i3'
+    'i1 i1 i2 i2 i3'
+    'i4 i5 i5 i6 i6';
+}
+
+.cases__title {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color-accent;
+  background-color: $color-grey-bg;
+  grid-area: cases;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px 0px 0px 0px;
+}
+
+.cases__grid>div:nth-of-type(1) {
+  grid-area: i1;
+}
+
+.cases__grid>div:nth-of-type(2) {
+  grid-area: i2;
+}
+
+.cases__grid>div:nth-of-type(3) {
+  grid-area: i3;
+}
+
+.cases__grid>div:nth-of-type(4) {
+  grid-area: i4;
+}
+
+.cases__grid>div:nth-of-type(5) {
+  grid-area: i5;
+}
+
+.cases__grid>div:nth-of-type(6) {
+  grid-area: i6;
+}
+
+
+.cases__item {
+  background-color: $color-grey-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  cursor: pointer;
+
+  row-gap: 20px;
+
+  &:hover {
+    background-color: $color-grey-alt;
+  }
+}
+
+.cases__description {
+  font-size: 24px;
+  line-height: 28px;
+  color: $color-main-soft;
+  font-weight: 500;
+}
+
+.cases__partner {
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-grey-text;
+}
