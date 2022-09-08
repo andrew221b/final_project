@@ -9,7 +9,7 @@
 .footer__flex {
   display: flex;
   justify-content: space-between;
-  border-top: 4px solid $color-grey-sep;
+
   padding-top: 29px;
 
   @include sm {
@@ -17,6 +17,10 @@
     align-items: center;
     gap: 20px;
     text-align: center;
+  }
+
+  &--dark {
+    border-top: 4px solid $color-grey-sep;
   }
 }
 

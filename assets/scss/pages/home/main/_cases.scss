@@ -2,16 +2,30 @@
 @use "../../../mixins" as *;
 
 
-.casses {}
+.casses {
+  margin-bottom: 60px;
+}
 
 .cases__grid {
-  display: grid;
   gap: 2px;
+
+ @include md-min {
+  display: grid;
   grid-template-columns: 25% 8% 25% 8% 2fr;
-  grid-template-rows: 15% 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
   grid-template-areas: 'cases cases i2 i2 i3'
     'i1 i1 i2 i2 i3'
     'i4 i5 i5 i6 i6';
+ }
+
+ @media (min-width: 1043px) and (max-width: 1245px) {
+  grid-template-rows: 0.6fr 1fr 1fr;
+ }
+
+    @include lg {
+      display: flex;
+      flex-direction: column;
+    }
 }
 
 .cases__title {
@@ -27,6 +41,11 @@
   align-items: center;
   justify-content: center;
   border-radius: 12px 0px 0px 0px;
+
+  @include lg {
+    padding: 15px;
+    border-radius: 12px 12px 0px 0px;
+  }
 }
 
 .cases__grid>div:nth-of-type(1) {
@@ -39,10 +58,19 @@
 
 .cases__grid>div:nth-of-type(3) {
   grid-area: i3;
+
+  @include md-min {
+    border-radius: 0px 12px 0px 0px;
+  }
 }
 
 .cases__grid>div:nth-of-type(4) {
   grid-area: i4;
+
+
+  @include md-min {
+    border-radius: 0px 0px 0px 12px;
+  }
 }
 
 .cases__grid>div:nth-of-type(5) {
@@ -51,6 +79,11 @@
 
 .cases__grid>div:nth-of-type(6) {
   grid-area: i6;
+  border-radius: 0px 0px 12px 0px;
+
+  @include md {
+    border-radius: 0px 0px 12px 12px;
+  }
 }
 
 

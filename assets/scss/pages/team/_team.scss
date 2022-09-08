@@ -1,0 +1,140 @@
+@use "../../mixins" as *;
+@use "../../presets" as *;
+
+
+.team {
+  @include sm-min {
+    margin-bottom: 50px;
+  }
+
+  @include sm {
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    font-size: 42px;
+    line-height: 50px;
+    max-width: 865px;
+    margin: 0 auto;
+
+    @include gradient;
+
+    @include md-min {
+      font-size: 42px;
+      line-height: 50px;
+      padding: 81px 0 80px;
+    }
+
+    @include md {
+      font-size: 32px;
+      line-height: 38px;
+      padding: 23px 0 20px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    align-items: start;
+    column-gap: 40px;
+    row-gap: 45px;
+
+    @include md-min {
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    @include md-sm {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include sm {
+      row-gap: 16px;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    gap: 10px;
+
+    @include sm {
+      flex-basis: 0;
+      flex-grow: 1;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    @media (max-width: 320px) {
+      flex-grow: 2;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &:hover a:not(.team__position-link) {
+      cursor: pointer;
+      color: $color-accent;
+    }
+
+    @include sm {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+  }
+
+  &__pic {
+    max-width: 413px;
+    flex-basis: 0;
+    flex-grow: 1;
+
+    &-link>img {
+      width: 100%;
+      object-fit: cover;
+
+      @include sm-min {
+        padding-bottom: 20px;
+      }
+
+      @include sm {
+        padding-right: 10px;
+      }
+
+      @media (max-width: 328px) {
+        padding-right: 4px;
+      }
+    }
+  }
+
+  &__name-link {
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-main;
+    font-weight: 500;
+    transition: .25s;
+
+    @include xs {
+      font-size: 16px;
+      line-height: 13px;
+    }
+  }
+
+  &__position {
+    padding-top: 6px;
+
+    &-link {
+      font-size: 16px;
+      line-height: 22px;
+      color: $color-grey-text;
+
+      @include xs {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
