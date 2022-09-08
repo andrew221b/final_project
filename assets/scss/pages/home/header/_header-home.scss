@@ -34,10 +34,20 @@
   }
 
   &__symbol {
-    transform: translateY(8%);
     position: absolute;
-    bottom: 90px;
-    scale: 1.2;
+    bottom: 30px;
+    transform: scale(1.2);
+
+
+   @media (max-height: 750px) {
+    bottom: -30px;
+    transform: scale(0.9);
+   }
+
+   @media (max-height: 590px) {
+    bottom: -40px;
+    transform: scale(0.8);
+   }
   }
 
   &__title {

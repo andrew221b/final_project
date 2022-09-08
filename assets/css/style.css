@@ -119,12 +119,6 @@ body.burger::before {
 }
 
 .footer-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-
   -webkit-column-gap: 29px;
      -moz-column-gap: 29px;
           column-gap: 29px;
@@ -136,10 +130,14 @@ body.burger::before {
   font-weight: 500;
   font-style: normal;
   line-height: 19px;
+
+  grid-area: ad;
 }
 
 .footer-contacts__map {
   padding-left: 4px;
+
+  grid-area: map;
 }
 
 .footer-contacts__map-link {
@@ -159,9 +157,16 @@ body.burger::before {
   color: #f0145a;
 }
 
+.footer-contacts__social {
+  grid-area: fb;
+}
 .footer-contacts__social:hover {
   -webkit-filter: invert(1000%) sepia(59%) saturate(1000%) hue-rotate(332deg) brightness(96%) contrast(95%);
           filter: invert(1000%) sepia(59%) saturate(1000%) hue-rotate(332deg) brightness(96%) contrast(95%);
+}
+
+.footer-contacts__tel {
+  grid-area: tel;
 }
 
 .footer-contacts__tel-link {
@@ -170,6 +175,10 @@ body.burger::before {
   font-size: 16px;
   font-weight: bold;
   line-height: 19px;
+}
+
+.footer-contacts__mail {
+  grid-area: mail;
 }
 
 .footer-contacts__mail-link {
@@ -235,7 +244,6 @@ body.burger::before {
           background-clip: text;
 
   -webkit-text-fill-color: transparent;
-          text-fill-color: transparent;
 }
 
 .experience-slider__notes {
@@ -716,13 +724,11 @@ body.burger::before {
 }
 .header-home__symbol {
   position: absolute;
-  bottom: 90px;
+  bottom: 30px;
 
-  -webkit-transform: translateY(8%);
-      -ms-transform: translateY(8%);
-          transform: translateY(8%);
-
-  scale: 1.2;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .header-home__title {
   position: relative;
@@ -1414,12 +1420,16 @@ body.burger::before {
 
 @media (min-width: 820px) {
   .footer-contacts {
+    display: grid;
     -webkit-box-align: center;
     align-items: center;
     -ms-flex-align: center;
-    -ms-flex-preferred-size: 450px;
-    flex-basis: 450px;
 
+    max-width: 624px;
+
+    grid-template-areas: "ad ad map" "fb tel mail ";
+    grid-template-columns: -webkit-min-content 1fr 1fr;
+    grid-template-columns:         min-content 1fr 1fr;
     row-gap: 22px;
   }
   .services__grid {
@@ -1686,7 +1696,6 @@ body.burger::before {
     line-height: 17px;
 
     -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
   }
   .experience-slider__title.active {
     display: block;
@@ -1826,6 +1835,9 @@ body.burger::before {
 
 @media (max-width: 819.8px) {
   .footer-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: start;
     align-items: flex-start;
     -ms-flex-align: start;
@@ -1971,6 +1983,16 @@ body.burger::before {
   }
 }
 
+@media (max-height: 750px) {
+  .header-home__symbol {
+    bottom: -30px;
+
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
 @media (max-width: 599.8px) {
   .footer__flex {
     -webkit-box-align: center;
@@ -2084,6 +2106,16 @@ body.burger::before {
   }
   .team__pic-link > img {
     padding-right: 10px;
+  }
+}
+
+@media (max-height: 590px) {
+  .header-home__symbol {
+    bottom: -40px;
+
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 

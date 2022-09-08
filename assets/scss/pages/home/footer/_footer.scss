@@ -25,19 +25,22 @@
 }
 
 .footer-contacts {
-  display: flex;
 
-  flex-wrap: wrap;
   column-gap: 29px;
 
 
   @include md-min {
+    display: grid;
+    grid-template-areas: 'ad ad map'
+      'fb tel mail ';
+    grid-template-columns: min-content 1fr 1fr;
+    max-width: 624px;
     row-gap: 22px;
-    flex-basis: 450px;
     align-items: center;
   }
 
   @include md {
+    display: flex;
     flex-direction: column;
     row-gap: 10px;
     align-items: flex-start;
@@ -54,12 +57,13 @@
   color: $color-main;
   font-weight: 500;
   font-style: normal;
-
+  grid-area: ad;
 }
 
 
 .footer-contacts__map {
   padding-left: 4px;
+  grid-area: map;
 }
 
 .footer-contacts__map-link {
@@ -78,6 +82,7 @@
 
 .footer-contacts__social {
 
+  grid-area: fb;
 
   &:hover {
     filter: invert(1000%) sepia(59%) saturate(1000%) hue-rotate(332deg) brightness(96%) contrast(95%);
@@ -86,7 +91,9 @@
 
 .footer-contacts__social-link {}
 
-.footer-contacts__tel {}
+.footer-contacts__tel {
+  grid-area: tel;
+}
 
 .footer-contacts__tel-link {
   font-weight: bold;
@@ -95,7 +102,9 @@
   color: $color-main-alt;
 }
 
-.footer-contacts__mail {}
+.footer-contacts__mail {
+  grid-area: mail;
+}
 
 .footer-contacts__mail-link {
   transition: .25s;
