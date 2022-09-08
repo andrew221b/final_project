@@ -146,11 +146,6 @@
     line-height: 21px;
     transition: .25s;
 
-    &.active {
-      border-bottom: 2px solid;
-      color: $color-accent;
-    }
-
     &:hover {
       color: $color-accent;
     }
@@ -162,6 +157,11 @@
     &.burger {
       font-size: 24px;
       color: $color-action-reg;
+    }
+
+    &.active {
+      border-bottom: 2px solid;
+      color: $color-accent;
     }
   }
 }

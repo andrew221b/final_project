@@ -955,10 +955,6 @@ body.burger::before {
   font-size: 18px;
   line-height: 21px;
 }
-.header-menu__link.active {
-  color: #f0145a;
-  border-bottom: 2px solid;
-}
 .header-menu__link:hover {
   color: #f0145a;
 }
@@ -969,6 +965,10 @@ body.burger::before {
   color: #24a3ff;
 
   font-size: 24px;
+}
+.header-menu__link.active {
+  color: #f0145a;
+  border-bottom: 2px solid;
 }
 .header-logo__page {
   display: -webkit-box;
