@@ -7,3 +7,10 @@
   -webkit-text-fill-color: transparent;
   background-size: 100%;
 }
+
+@mixin gradient2 {
+  background: linear-gradient(90deg, $color-accent-light 33%, $color-accent 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

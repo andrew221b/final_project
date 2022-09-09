@@ -2,49 +2,92 @@
 @use "../../../mixins" as *;
 
 
-.casses {
+.cases {
   margin-bottom: 32px;
-}
 
-.cases__grid {
-  gap: 2px;
+  &__grid {
+    gap: 2px;
 
- @include md-min {
-  display: grid;
-  grid-template-columns: 25% 8% 25% 8% 2fr;
-  grid-template-rows: 0.3fr 1fr 1fr;
-  grid-template-areas: 'cases cases i2 i2 i3'
-    'i1 i1 i2 i2 i3'
-    'i4 i5 i5 i6 i6';
- }
+    @include md-min {
+      display: grid;
+      grid-template-columns: 25% 8% 25% 8% 2fr;
+      grid-template-rows: 0.3fr 1fr 1fr;
+      grid-template-areas: 'cases cases i2 i2 i3'
+        'i1 i1 i2 i2 i3'
+        'i4 i5 i5 i6 i6';
+    }
 
- @media (min-width: 1043px) and (max-width: 1245px) {
-  grid-template-rows: 0.6fr 1fr 1fr;
- }
+    @media (min-width: 1043px) and (max-width: 1245px) {
+      grid-template-rows: 0.6fr 1fr 1fr;
+    }
 
     @include lg {
       display: flex;
       flex-direction: column;
     }
-}
+  }
 
-.cases__title {
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: $color-accent;
-  background-color: $color-grey-bg;
-  grid-area: cases;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px 0px 0px 0px;
+  &__title {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-accent;
+    background-color: $color-grey-bg;
+    grid-area: cases;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px 0px 0px 0px;
 
-  @include lg {
-    padding: 15px;
-    border-radius: 12px 12px 0px 0px;
+    @include lg {
+      padding: 15px;
+      border-radius: 12px 12px 0px 0px;
+    }
+  }
+
+  &__item {
+    background-color: $color-grey-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    cursor: pointer;
+    transition: .25s;
+
+    &:hover {
+      background-color: $color-grey-alt;
+    }
+
+    @include sm-min {
+      row-gap: 20px;
+    }
+
+    @include sm {
+      row-gap: 11px;
+    }
+  }
+
+  &__description {
+    color: $color-main-soft;
+    font-weight: 500;
+
+    @include sm-min {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    @include sm {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &__partner {
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-grey-text;
   }
 }
 
@@ -67,7 +110,6 @@
 .cases__grid>div:nth-of-type(4) {
   grid-area: i4;
 
-
   @include md-min {
     border-radius: 0px 0px 0px 12px;
   }
@@ -84,33 +126,4 @@
   @include md {
     border-radius: 0px 0px 12px 12px;
   }
-}
-
-
-.cases__item {
-  background-color: $color-grey-bg;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 20px;
-  cursor: pointer;
-transition: .25s;
-  row-gap: 20px;
-
-  &:hover {
-    background-color: $color-grey-alt;
-  }
-}
-
-.cases__description {
-  font-size: 24px;
-  line-height: 28px;
-  color: $color-main-soft;
-  font-weight: 500;
-}
-
-.cases__partner {
-  font-size: 18px;
-  line-height: 26px;
-  color: $color-grey-text;
 }

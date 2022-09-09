@@ -2,54 +2,47 @@
 @use "../../../mixins" as *;
 
 .partners {
-  margin-bottom: 60px;
-}
 
-.container {
-  &--partners {
-    max-width: 1480px;
+  &__grid {
+    display: grid;
 
-    @include sm {
-      padding: 0;
+    @include lg-min {
+      grid-template-columns: repeat(4, 1fr);
+      padding-bottom: 8px;
+      background-color: $color-grey-bg;
+    }
+
+    @include md-min {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
-}
-.partners__title {
-  font-size: 14px;
-line-height: 17px;
-letter-spacing: 1px;
-text-transform: uppercase;
-color: $color-main;
-text-align: center;
+
+  &__title {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-main;
+    text-align: center;
     margin-bottom: 29px;
-}
-.partners__grid {
-  display: grid;
-
-  @include lg-min {
-    grid-template-columns: repeat(4, 1fr);
   }
 
-  @include md-min {
-    grid-template-columns: repeat(3, 1fr);
+  &__item {
+    transition: .2s ease-in;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
   }
 
-  @include md {
-    grid-template-columns: repeat(2, 1fr);
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-}
-.partners__item {
-  transition: .2s ease-in;
-
-  &:hover {
-    transform: scale(1.02);
-    box-shadow: rgba(14, 30, 37, 0.5) 0px 2px 4px 0px, rgba(14, 30, 37, 0.6) 0px 2px 16px 0px;
-  }
-}
-.partners__link {
-}
-.partners__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }

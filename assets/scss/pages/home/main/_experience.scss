@@ -3,6 +3,7 @@
 
 
 .experience {
+  background-color: $color-main;
 
   @include lg-min {
     padding-top: 80px;
@@ -12,168 +13,153 @@
     padding-top: 40px;
   }
 
-  background-color: $color-main;
-}
-
-.experience-slider {
-  display: flex;
-
-  @include lg-min {
-    gap: 80px;
-  }
-
-  @include lg {
-    flex-direction: column;
-  }
-}
-
-.experience-slider__titles {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-basis: 0;
-  flex-grow: 2;
-  gap: 20px;
-
-
-@include lg-min {
-  &::after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 100%;
-    background-color: $color-grey-sep;
-    right: -42px;
-  }
-}
-}
-
-.experience-slider__title {
-  color: $color-grey-text;
-  position: relative;
-
-  @include lg-min {
-    font-size: 42px;
-    line-height: 50px;
-    text-align: right;
-  }
-
-  @include lg {
-    display: none;
-    width: min-content;
-    margin-bottom: 10px;
-    white-space: nowrap;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 17px;
-
-    background: linear-gradient(90deg, #EF8080 33%, #F0145A 99.96%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-
-  }
-
-
-  &.active {
-    background: linear-gradient(90deg, #EF8080 33%, #F0145A 99.96%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-
+  &-slider {
+    display: flex;
 
     @include lg-min {
-      &::after {
-        content: '';
-        position: absolute;
-        z-index: 1;
-        width: 4px;
-        height: 100%;
-        background-color: $color-accent;
-        right: -42px;
-        top: 0;
-      }
+      gap: 80px;
     }
 
     @include lg {
-      display: block;
+      flex-direction: column;
+    }
+
+    &__titles {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 0;
+      flex-grow: 2;
+      gap: 20px;
+
+
+      @include lg-min {
+        &::after {
+          content: '';
+          position: absolute;
+          width: 4px;
+          height: 100%;
+          background-color: $color-grey-sep;
+          right: -42px;
+        }
+      }
+    }
+
+    &__title {
+      color: $color-grey-text;
+      position: relative;
+
+      @include lg-min {
+        font-size: 42px;
+        line-height: 50px;
+        text-align: right;
+      }
+
+      @include lg {
+        display: none;
+        width: min-content;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 17px;
+        @include gradient2;
+      }
+
+      &.active {
+        @include gradient2;
+
+        @include lg-min {
+          &::after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 4px;
+            height: 100%;
+            background-color: $color-accent;
+            right: -42px;
+            top: 0;
+          }
+        }
+
+        @include lg {
+          display: block;
+        }
+      }
+    }
+
+    &__notes {
+      display: flex;
+      align-items: center;
+      flex-basis: 0;
+      flex-grow: 3;
+    }
+
+    &__note {
+      display: none;
+
+      @include lg-min {
+        max-width: 600px;
+        position: absolute;
+      }
+
+      &.active {
+        display: block;
+      }
+    }
+
+    &__subtitle {
+      color: $color-white;
+      margin-bottom: 20px;
+
+      @include lg-min {
+        font-size: 32px;
+
+      }
+
+      @include lg {
+        margin-bottom: 15px;
+        font-size: 22px;
+      }
+    }
+
+    &__text {
+      line-height: 30px;
+      color: $color-white;
+
+      @include lg-min {
+        font-size: 21px;
+      }
+
+      @include lg {
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+    }
+
+    &__indicators {
+      @include lg-min {
+        display: none;
+      }
+
+      @include lg {
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+      }
+    }
+
+    &__indicator {
+      width: 16px;
+      height: 16px;
+      opacity: 0.2;
+      background: $color-action-active;
+      border-radius: 8px;
+
+      &.active {
+        opacity: 1;
+      }
     }
   }
-}
-
-.experience-slider__notes {
-  display: flex;
-  align-items: center;
-  flex-basis: 0;
-  flex-grow: 3;
-}
-
-.experience-slider__note {
-
-  display: none;
-
-
-  @include lg-min {
-    max-width: 600px;
-    position: absolute;
-  }
-
-  &.active {
-    display: block;
-  }
-}
-
-.experience-slider__subtitle {
-  color: $color-white;
-  margin-bottom: 20px;
-
-  @include lg-min {
-    font-size: 32px;
-
-  }
-
-  @include lg {
-    margin-bottom: 15px;
-    font-size: 22px;
-  }
-}
-
-.experience-slider__text {
-  line-height: 30px;
-  color: $color-white;
-
-  @include lg-min {
-    font-size: 21px;
-  }
-
-  @include lg {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-}
-
-.experience-slider__indicators {
-
-  @include lg-min {
-    display: none;
-  }
-
-  @include lg {
-    display: flex;
-    gap: 14px;
-    justify-content: center;
-  }
-}
-
-.experience-slider__indicator {
-width: 16px;
-height: 16px;
-opacity: 0.2;
-background: $color-action-active;
-border-radius: 8px;
-
-&.active {
-  opacity: 1;
-}
 }

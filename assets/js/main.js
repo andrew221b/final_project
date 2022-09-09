@@ -64,3 +64,5 @@ setInterval(() => {
 descriptionsList.forEach(el => heightsArr.push(el.clientHeight));
 heightMax = Math.max(...heightsArr);
 descriptionsList.forEach(el => el.style.height = `${heightMax}px`);
+
+
