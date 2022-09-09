@@ -37,6 +37,7 @@
     letter-spacing: 1px;
     padding: 5px 6px;
     transition: .25s;
+    color: $color-grey-text;
 
     &.active {
       background-color: $color-accent;
@@ -50,8 +51,8 @@
       color: $color-grey-text;
     }
 
-    &--dark {
-      color: $color-grey-text;
+    &--dark-bg {
+      color: $color-white;
     }
   }
 
@@ -60,9 +61,14 @@
       display: none;
     }
 
-    &-link--dark {
+    &-link {
       color: $color-grey-text;
+
+      &--dark-bg {
+        color: $color-white;
+      }
     }
+
   }
 
   &__socials {
@@ -76,11 +82,12 @@
     }
   }
 
-  &__tel {
+  &__tel-link {
     font-weight: 700;
+    color: $color-grey-text;
 
-    &-link--dark {
-      color: $color-grey-text;
+    &--dark-bg {
+      color: $color-white;
     }
   }
 }

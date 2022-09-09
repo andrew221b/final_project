@@ -37,14 +37,15 @@
       transition: 0.25s ease-in-out;
       transform: rotate(0deg);
       opacity: 1;
-      background-color: $color-white;
+
+      background-color: $color-main;
 
       &.burger {
         background-color: red;
       }
 
-      &--dark {
-        background-color: $color-main;
+      &--dark-bg {
+        background-color: $color-white;
       }
 
       &:nth-of-type(1) {
@@ -79,7 +80,6 @@
   }
 
   &__list {
-
     @include sm-min {
       display: flex;
       gap: 15px;
@@ -145,13 +145,14 @@
     font-size: 18px;
     line-height: 21px;
     transition: .25s;
+    color: $color-action-reg;
 
     &:hover {
       color: $color-accent;
     }
 
-    &--dark {
-      color: $color-action-reg;
+    &--dark-bg {
+      color: $color-white;
     }
 
     &.burger {

@@ -4,6 +4,7 @@
 
 .experience {
   background-color: $color-main;
+  padding-bottom: 10px;
 
   @include lg-min {
     padding-top: 80px;

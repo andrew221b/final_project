@@ -2,6 +2,10 @@
 @use "../../../presets" as *;
 
 .header {
+  &--services {
+    background-color: $color-main;
+  }
+
   &__grid--abs {
     position: absolute;
     z-index: 3;

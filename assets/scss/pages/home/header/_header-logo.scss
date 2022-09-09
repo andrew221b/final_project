@@ -15,9 +15,14 @@
     color: $color-main;
     display: flex;
 
+    &--dark-bg {
+      color: $color-white;
+    }
+
     @include sm {
       font-size: 19px;
     }
+
 
     &::before {
       content: '';
@@ -34,6 +39,8 @@
         width: 12px;
         height: 24px;
       }
+
+
     }
 
     &::after {

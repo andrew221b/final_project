@@ -7,18 +7,16 @@
   position: relative;
   overflow: hidden;
 
-@include md-min {
-  &::before {
-    content: "";
-    @include abs-pos;
-    background-image: url(../img/header/Frame2.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-    background-size: 88vh;
+  @include md-min {
+    &::before {
+      content: "";
+      @include abs-pos;
+      background-image: url(../img/header/Frame2.svg);
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
+      background-size: 88vh;
+    }
   }
-}
-
-
 
   &::after {
     content: "";
@@ -39,15 +37,15 @@
     transform: scale(1.2);
 
 
-   @media (max-height: 750px) {
-    bottom: -30px;
-    transform: scale(0.9);
-   }
+    @media (max-height: 750px) {
+      bottom: -30px;
+      transform: scale(0.9);
+    }
 
-   @media (max-height: 590px) {
-    bottom: -40px;
-    transform: scale(0.8);
-   }
+    @media (max-height: 590px) {
+      bottom: -40px;
+      transform: scale(0.8);
+    }
   }
 
   &__title {
