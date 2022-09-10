@@ -12,6 +12,7 @@
 
     &--page {
       height: 100%;
+      margin-top: 59px;
     }
 
     &::after {
@@ -186,5 +187,57 @@
     &:active {
       background: #006CCF;
     }
+  }
+}
+
+.topics__switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.topics__switch {
+  display: inline-flex;
+  position: relative;
+  padding: 3px;
+  border-radius: 12px;
+  background: $color-grey-sep;
+  gap: 2px;
+
+  &-highlight {
+    width: 50%;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    bottom: 3px;
+    background: $color-white;
+    border-radius: 10px;
+    transition: .3s;
+  }
+}
+
+button {
+  position: relative;
+  padding: 7px 33px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-main;
+  background: none;
+  border-radius: 50px;
+  border: 0;
+  outline: none;
+  transition: .3s;
+  cursor: pointer;
+
+&:hover,
+&:focus {
+  background: $color-grey-bg;
+border-radius: 10px;
+}
+
+  &.is-active {
+    background: $color-white;
   }
 }

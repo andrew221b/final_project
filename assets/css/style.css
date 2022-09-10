@@ -704,6 +704,79 @@ body.burger::before {
   background: #006ccf;
 }
 
+.topics__switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  padding-top: 16px;
+}
+
+.topics__switch {
+  position: relative;
+
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+
+  padding: 3px;
+
+  border-radius: 12px;
+  background: #e6e6f0;
+
+  gap: 2px;
+}
+.topics__switch-highlight {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 0;
+
+  width: 50%;
+
+  -webkit-transition: 0.3s;
+       -o-transition: 0.3s;
+          transition: 0.3s;
+
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+button {
+  position: relative;
+
+  padding: 7px 33px;
+
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+       -o-transition: 0.3s;
+          transition: 0.3s;
+
+  color: #323264;
+  border: 0;
+  border-radius: 50px;
+  outline: none;
+  background: none;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+}
+button:hover,
+button:focus {
+  border-radius: 10px;
+  background: #f5f5fa;
+}
+button.is-active {
+  background: #ffffff;
+}
+
 .header--services {
   background-color: #323264;
 }
@@ -1700,6 +1773,7 @@ body.burger::before {
   }
   .topics--page {
     height: 100%;
+    margin-top: 59px;
   }
   .topics::after {
     position: absolute;
