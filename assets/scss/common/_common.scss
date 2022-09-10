@@ -1,8 +1,25 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 
 .container {
   max-width: $ul;
   margin: 0 auto;
   padding: 0 20px;
+
+  &--rel {
+    position: relative;
+    z-index: 2;
+    @include md-min {
+      padding-top: 93px;
+    }
+
+    @include md-sm {
+      padding-top: 140px;
+    }
+
+    @include sm {
+      padding-top: 50px;
+    }
+  }
 }
 

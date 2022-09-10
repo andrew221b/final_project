@@ -10,17 +10,17 @@
   <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
-<body>
-  <header class="header header--services">
+<body class="body">
+  <header class="header header--service">
     <div class="container">
-      <div class="header__grid ">
+      <div class="header__grid header__grid--abs container">
         <div class="header__flex">
           <div class="header-logo">
             <a class="header-logo__pic" href="../../index.html">
-              <img src="../../assets/img/header/LogoWhite.svg" alt="logo">
+              <img src="../../assets/img/header/LogoWhite.svg" alt="Logo">
             </a>
           </div>
-          <div class="header-logo__page header-logo__page--dark-bg">про нас</div>
+          <div class="header-logo__page header-logo__page--dark-bg">послуги</div>
         </div>
 
         <nav class="header-menu">
@@ -35,7 +35,8 @@
               <a class="header-menu__link header-menu__link--dark-bg" href="../about_us/about_us.html">про нас</a>
             </li>
             <li class="header-menu__item">
-              <a class="header-menu__link header-menu__link--dark-bg active" href="#">послуги</a>
+              <a class="header-menu__link header-menu__link--dark-bg active"
+                href="../services/services.html"><span>послуги</span></a>
             </li>
             <li class="header-menu__item">
               <a class="header-menu__link header-menu__link--dark-bg" href="../team/team.html">команда</a>
@@ -70,7 +71,7 @@
 
           <div class="header-action__socials">
             <a class="header-action__socials-link" href="">
-              <img src="../../assets/img/header/Facebook.svg" alt="facebook">
+              <img src="../../assets/img/header/Facebook.svg" alt="Facebook">
             </a>
           </div>
         </nav>
@@ -80,86 +81,54 @@
 
   <main class="main">
 
-    <section class="services">
-      <div class="container">
+    <section class="services services--open">
+      <div class="container container--rel">
 
-        <h2 class="services__title">
-          Що ми вміємо робити краще за інших?
-        </h2>
-
-        <div class="services__grid">
-          <div class="services-item">
-            <h3 class="services-item__title">
-              <a href="" class="services-item__title-link">IT та електронна комерція</a>
-            </h3>
-            <div class="services-item__pic">
-              <img src="../../assets/img/home/services/Icon.svg" alt="" class="services-item__img">
-            </div>
-            <p class="services-item__description">Нескінчений потік договорів, податкові питання, трудові відносини,
-              корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато,
-              щоб наймати інхауз-юриста.</p>
+        <div class="services-item services-item--page">
+          <h3 class="services-item__title-page">
+            IT та електронна комерція
+          </h3>
+          <div class="services-item__pic">
+            <img src="../../assets/img/home/services/Icon.svg" alt="Services Icon"
+              class="services-item__img services-item__img--page">
           </div>
+          <p class="services-item__description services-item__description--page">Нескінчений потік договорів, податкові
+            питання, трудові відносини,
+            корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато,
+            щоб наймати інхауз-юриста.</p>
 
-          <div class="services-item">
-            <h3 class="services-item__title">
-              <a href="" class="services-item__title-link">Комплексний щоденний юридичний супровід</a>
-            </h3>
-            <div class="services-item__pic">
-              <img src="../../assets/img/home/services/Icon-1.svg" alt="" class="services-item__img">
-            </div>
-            <p class="services-item__description">До того ж, з часом робота стане однотипною і нецікавою для штатного
-              юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері
-              інформаційних технологій.</p>
-          </div>
+          <p class="services-item__description services-item__description--page">До того ж, з часом робота стане
+            однотипною і нецікавою для штатного
+            юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері
+            інформаційних технологій.</p>
 
-          <div class="services-item">
-            <h3 class="services-item__title">
-              <a href="" class="services-item__title-link">Структуризація корпоративних відносин</a>
-            </h3>
-            <div class="services-item__pic">
-              <img src="../../assets/img/home/services/Icon-2.svg" alt="" class="services-item__img">
-            </div>
-            <p class="services-item__description">Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу
-              команду, які впишуться в повсякденне життя вашої компанії.</p>
+          <div class="services-item__action">
+            <div class="services-item__btn">Безкоштовна консультація</div>
           </div>
+        </div>
 
-          <div class="services-item">
-            <h3 class="services-item__title">
-              <a href="" class="services-item__title-link">Побудовa договірних відносин</a>
-            </h3>
-            <div class="services-item__pic">
-              <img src="../../assets/img/home/services/Icon-3.svg" alt="" class="services-item__img">
-            </div>
-            <p class="services-item__description">Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний
-              юрист. Будь-хто в компанії може впіймати його біля кавоварки і просто поговорити про поточні справи
-              замість очікування статусу update.</p>
-          </div>
+        <div class="services__content">
+          <h4 class="services__content-title">Послуги цього напрямку:</h4>
 
-          <div class="services-item">
-            <h3 class="services-item__title">
-              <a href="" class="services-item__title-link">Захист бізнесу, інтелектуальної власності</a>
-            </h3>
-            <div class="services-item__pic">
-              <img src="../../assets/img/home/services/Icon-4.svg" alt="" class="services-item__img">
-            </div>
-            <p class="services-item__description">А весь інший час він працюватиме над новими різноплановими проектами,
-              тому вже точно не зупиниться в професійному розвитку. Так чи інакше, на вас працюватиме весь Axon Partners
-              замість корпоративного юриста.</p>
-          </div>
-
-          <div class="services-item">
-            <h3 class="services-item__title">
-              <a href="" class="services-item__title-link">Судове представництво</a>
-            </h3>
-            <div class="services-item__pic">
-              <img src="../../assets/img/home/services/Icon-5.svg" alt="" class="services-item__img">
-            </div>
-            <p class="services-item__description">Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний
-              бізнес або транснаціональна компанія? Маєте власний юридичний відділ, чи ні?</p>
-          </div>
+          <ul class="services__list">
+            <li class="services__direction">супровід інвестиційних проектів з розвитку портової інфраструктури;
+            <li class="services__direction">паспортизація ГТС, внесення інформації про них в обов'язкові бази даних і
+              реєстри;</li>
+            <li class="services__direction">оформлення дозвільної документації для будівництва портових терміналів;</li>
+            <li class="services__direction">оформлення дозвільної та іншої обов'язкової документації, необхідної для
+              здійснення діяльності в порту (дозвіл на викиди, висновок по ОВНС, РТК і ін.);</li>
+            <li class="services__direction">супровід процедур, пов'язаних з орендою державного майна в порту;</li>
+            <li class="services__direction">супровід процедур, пов'язаних з підтвердженням статусу портового оператора,
+              морського агента, лінії закордонного плавання;</li>
+            <li class="services__direction">супровід процедур, пов'язаних з включенням компанії в межі порту;</li>
+            <li class="services__direction">оскарження дій, пов'язаних з незаконним нав'язуванням послуг в порту
+              компаніями-монополістами.</li>
+          </ul>
         </div>
       </div>
     </section>
+
+
 
 
 
@@ -195,80 +164,104 @@
       </div>
     </section>
 
-    <section class="partners">
-      <h4 class="partners__title">Вже довіряють нам</h4>
+    <section class="topics">
+      <div class="container">
+        <div class="topics__page">
+          <a class="topics__page-link" href="">Публікації</a>
+        </div>
+        <h2 class="topics__title">
+          Нам є що розповісти
+        </h2>
 
-      <div class="partners__grid">
-        <div class="partners__item">
-          <a href="#" class="partners__link">
-            <img src="../../assets/img/home/partners/image1.png" alt="partner-link" class="partners__img">
-            </a>
+        <div class="topics__layout">
+
+          <div class="topics__item">
+            <h4 class="topics__subtitle">
+              <a class="topics__link" href="#">
+                Валютний контроль помер, хай живе валютний контроль!
+              </a>
+            </h4>
+            <div class="topics__date">14 червня</div>
+            <div class="topics__content">Експерти проводять конференції, круглі столи та іншого штибу заходи на тему
+              «лібералізація валютного законодавства». Юристи-експерти-новелісти стирають пальці об «ctrl+c/ctrl+v».
+            </div>
+          </div>
+
+          <div class="topics__item">
+            <div class="topics__pic">
+              <img src="../../assets/img/home/topics/image-1.png" alt="Topics Img" class="topics__img">
+            </div>
+            <h4 class="topics__subtitle">
+              <a class="topics__link" href="#">
+                Заповіт міленіала
+              </a>
+            </h4>
+            <div class="topics__date">19 серпня</div>
+            <div class="topics__content">
+              Що і як передаватимуть у спадщину сучасні влогери, опініон лідери і криптомільйонери Типовий спадок
+              українського покоління Х виглядає так: квартира у…
+            </div>
+          </div>
+
+          <div class="topics__item">
+            <div class="topics__pic">
+              <img src="../../assets/img/home/topics/image-2.png" alt="Topics Img" class="topics__img">
+            </div>
+            <h4 class="topics__subtitle">
+              <a class="topics__link" href="#">
+                Equity associate
+              </a>
+            </h4>
+            <div class="topics__date">22 квітня</div>
+            <div class="topics__content">На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося.
+              Перед вступом батьки мені казали, що якщо буду…</div>
+          </div>
+
+          <div class="topics__item non-visible">
+            <div class="topics__pic">
+              <img src="../../assets/img/home/topics/image-3.png" alt="Topics Img" class="topics__img">
+            </div>
+            <h4 class="topics__subtitle">
+              <a class="topics__link" href="#">
+                Закон про мови: як зробити свій сайт відповідним
+              </a>
+            </h4>
+            <div class="topics__date">14 червня</div>
+            <div class="topics__content">Що і як передаватимуть у спадщину сучасні влогери, опініон лідери і
+              криптомільйонери Типовий спадок українського покоління Х виглядає так: квартира у…</div>
+          </div>
+
+          <div class="topics__item non-visible">
+            <div class="topics__pic">
+              <img src="../../assets/img/home/topics/image-4.png" alt="Topics Img" class="topics__img">
+            </div>
+            <h4 class="topics__subtitle">
+              <a class="topics__link" href="#">
+                Штраф для «Корпорації добра»: що буде з Google та іншими за порушення GDPR
+              </a>
+            </h4>
+            <div class="topics__date">29 вересня</div>
+            <div class="topics__content">І чому стягнення у 50 млн євро може стати доленосним прецедентом За матеріалами
+              Mind.ua 21 січня Національна комісія із захисту даних.</div>
+          </div>
+
+          <div class="topics__item non-visible">
+            <div class="topics__pic">
+              <img src="../../assets/img/home/topics/image-5.png" alt="Topics Img" class="topics__img">
+            </div>
+            <h4 class="topics__subtitle">
+              <a class="topics__link" href="#">
+                Компенсація витрат на навчання дитини в дитячому садку та школі
+              </a>
+            </h4>
+            <div class="topics__date">5 Лютого</div>
+            <div class="topics__content">Про що йде мова В червні цього року Верховна Рада внесла зміни до Податкового
+              кодексу України. Відтепер батьки, які отримують офіційну…</div>
+          </div>
         </div>
 
-        <div class="partners__item">
-          <a href="#" class="partners__link">
-            <img src="../../assets/img/home/partners/image2.png" alt="partner-link" class="partners__img">
-          </a>
-        </div>
-
-        <div class="partners__item">
-          <a href="#" class="partners__link">
-            <img src="../../assets/img/home/partners/image3.png" alt="partner-link" class="partners__img">
-          </a>
-        </div>
-
-        <div class="partners__item">
-          <a href="#" class="partners__link">
-            <img src="../../assets/img/home/partners/image4.png" alt="partner-link" class="partners__img">
-          </a>
-        </div>
-
-        <div class="partners__item">
-          <a href="#" class="partners__link">
-            <img src="../../assets/img/home/partners/image5.png" alt="partner-link" class="partners__img">
-          </a>
-        </div>
-
-        <div class="partners__item">
-          <a href="#" class="partners__link">
-            <img src="../../assets/img/home/partners/image6.png" alt="partner-link" class="partners__img">
-          </a>
-        </div>
-
-        <div class="partners__item">
-          <a href="#" class="partners__link">
-            <img src="../../assets/img/home/partners/image7.png" alt="partner-link" class="partners__img">
-          </a>
-        </div>
-
-        <div class="partners__item">
-          <a href="#" class="partners__link">
-            <img src="../../assets/img/home/partners/image8.png" alt="partner-link" class="partners__img">
-          </a>
-        </div>
-
-        <div class="partners__item">
-          <a href="#" class="partners__link">
-            <img src="../../assets/img/home/partners/image9.png" alt="partner-link" class="partners__img">
-          </a>
-        </div>
-
-        <div class="partners__item">
-          <a href="#" class="partners__link">
-            <img src="../../assets/img/home/partners/image10.png" alt="partner-link" class="partners__img">
-          </a>
-        </div>
-
-        <div class="partners__item">
-          <a href="#" class="partners__link">
-            <img src="../../assets/img/home/partners/image11.png" alt="partner-link" class="partners__img">
-          </a>
-        </div>
-
-        <div class="partners__item">
-          <a href="#" class="partners__link">
-            <img src="../../assets/img/home/partners/image12.png" alt="partner-link" class="partners__img">
-          </a>
+        <div class="topics__action">
+          <div class="topics__btn">Ще публікації</div>
         </div>
       </div>
     </section>
@@ -276,7 +269,7 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer__flex non-visible">
+      <div class="footer__flex">
         <div class="footer-contacts">
           <address class="footer-contacts__adress">Одеса, Адміральський пр., 3</address>
           <div class="footer-contacts__map">
@@ -284,7 +277,7 @@
           </div>
           <div class="footer-contacts__social">
             <a class="footer-contacts__social-link" href="#">
-              <img src="../../assets/img/footer/FacebookBlue.svg" alt="social-link">
+              <img src="../../assets/img/footer/FacebookBlue.svg" alt="Facebook">
             </a>
           </div>
           <div class="footer-contacts__tel">

@@ -166,20 +166,8 @@
   }
 
   &__btn {
-    background: #24A3FF;
-    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-    border-radius: 12px;
-    cursor: pointer;
-    font-weight: bold;
     z-index: 3;
-
-    color: $color-white;
-    min-width: 250px;
-    max-width: 1320px;
-    min-height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include btn-style;
 
     &:hover {
       background: #0085FF;

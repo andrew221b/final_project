@@ -1,13 +1,27 @@
-@use "../../../presets" as *;
-@use "../../../mixins" as *;
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 
 .services {
-  padding-top: 70px;
+
   padding-bottom: 80px;
   margin-bottom: 20px;
   border-radius: 0 0 12px 12px;
   background: linear-gradient(209deg, #323264 11%, #323264 57%, #643e72 87%);
   position: relative;
+
+  @include lg-min {
+    padding-top: 70px;
+  }
+
+  @include lg {
+    padding-top: 25px;
+
+    &--open {
+      padding-top: 70px;
+    }
+  }
+
 
   &::before {
     content: '';
@@ -30,6 +44,10 @@
     height: 20px;
     left: 40px;
     right: 40px;
+  }
+
+  &--open {
+    background: linear-gradient(200deg, #323264 11%, #323264 66%, #643e72 92%);
   }
 
   &__page {
@@ -66,8 +84,13 @@
       font-size: 42px;
     }
 
-    @include lg {
+    @include lg-sm {
       margin-bottom: 40px;
+      font-size: 32px;
+    }
+
+    @include sm {
+      margin-bottom: 20px;
       font-size: 32px;
     }
   }
@@ -91,58 +114,60 @@
       gap: 25px;
     }
   }
+}
 
-  &-item {
-    display: grid;
-    grid-template-rows: auto auto 1fr;
-    gap: 15px;
 
-    @include lg {
-      grid-template-columns: auto 1fr;
-      align-items: center;
-    }
+.services__content {
+  max-width: 1131px;
+  margin: 0 auto;
+  border-top: 4px solid #9898b2;
+}
 
-    &__title-link {
-      color: $color-action-reg;
+.services__content-title {
 
-      @include md-min {
-        font-size: 24px;
-        line-height: 28px;
-      }
+  color: $color-white;
+  font-weight: 500;
+  padding-top: 19px;
+  margin-bottom: 22px;
 
-      @include md {
-        font-size: 18px;
-        line-height: 21px;
-      }
-    }
+  @include md-min {
+    font-size: 24px;
+    line-height: 28px;
+  }
 
-    &__pic {
-      order: -1;
-      display: flex;
-    }
+  @include md {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
 
-    &__img {
-      @include md {
-        width: 64px;
-      }
-    }
+.services__list {
+  display: grid;
 
-    &__description {
-      color: $color-white;
+  max-width: 1090px;
+  margin: 0 auto;
+  column-gap: 50px;
+  row-gap: 20px;
 
-      @include lg {
-        grid-column: 1/3;
-      }
+  @include md-min {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
-      @include md-min {
-        font-size: 18px;
-        line-height: 26px;
-      }
+.services__direction {
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-white;
 
-      @include md {
-        font-size: 16px;
-        line-height: 22px;
-      }
-    }
+  &::before {
+    content: '';
+    background-image: url(../../../../assets/img/home/services/DotSeparator.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    padding-bottom: 8px;
+    margin-left: -12px;
+    padding-right: 12px;
   }
 }

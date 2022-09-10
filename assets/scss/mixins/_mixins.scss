@@ -10,7 +10,22 @@
 
 @mixin gradient2 {
   background: linear-gradient(90deg, $color-accent-light 33%, $color-accent 99.96%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@mixin btn-style {
+  background: $color-action-reg;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  color: $color-white;
+  min-width: 250px;
+  max-width: 1320px;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
