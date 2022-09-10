@@ -102,6 +102,36 @@ body.burger::before {
   z-index: 2;
 }
 
+.slider {
+  position: relative;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  padding: 30px 30px 30px 30px;
+
+  gap: 14px;
+}
+.slider__dot {
+  width: 16px;
+  height: 16px;
+
+  opacity: 0.2;
+  border: none;
+  border-radius: 8px;
+  background-color: #24a3ff;
+}
+.slider__dot.active {
+  opacity: 1;
+}
+.slider__dot:hover {
+  opacity: 0.6;
+}
+
 .footer {
   padding-bottom: 39px;
 
@@ -291,9 +321,6 @@ body.burger::before {
   opacity: 1;
 }
 
-.quote {
-  padding-top: 40px;
-}
 .quote__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,32 +348,6 @@ body.burger::before {
 
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
-}
-.quote__slider {
-  position: relative;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-
-  padding: 30px 30px 0 30px;
-
-  gap: 14px;
-}
-.quote__slider-dot {
-  width: 16px;
-  height: 16px;
-
-  opacity: 0.2;
-  border: none;
-  border-radius: 8px;
-  background-color: #24a3ff;
-}
-.quote__slider-dot.active {
-  opacity: 1;
 }
 .quote__link {
   letter-spacing: 1px;
@@ -418,7 +419,6 @@ body.burger::before {
 
 .cases {
   margin-bottom: 32px;
-  padding-top: 35px;
 }
 .cases__grid {
   gap: 2px;
@@ -1122,11 +1122,6 @@ button.is-active {
 
   font-size: 24px;
 }
-.header-menu__link.burger > span {
-  padding-bottom: 3px;
-
-  border-bottom: 2px solid #f0145a;
-}
 .header-menu__link.active {
   color: #f0145a;
 }
@@ -1334,37 +1329,11 @@ button.is-active {
 .achievements__item-img {
   width: 100%;
 }
-.achievements__slider {
-  position: relative;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-
-  padding: 30px;
-
-  gap: 14px;
-}
-.achievements__slider-dot {
-  width: 16px;
-  height: 16px;
-
-  opacity: 0.2;
-  border: none;
-  border-radius: 8px;
-  background-color: #24a3ff;
-}
-.achievements__slider-dot.active {
-  opacity: 1;
-}
 
 .services {
   position: relative;
 
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   padding-bottom: 80px;
 
   border-radius: 0 0 12px 12px;

@@ -168,11 +168,6 @@
     align-items: center;
     justify-content: center;
 
-    &>span {
-      border-bottom: 2px solid $color-accent;
-      padding-bottom: 3px;
-    }
-
     }
     &.active {
       color: $color-accent;
