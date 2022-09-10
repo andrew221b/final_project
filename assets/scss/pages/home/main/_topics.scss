@@ -10,6 +10,10 @@
   @include sm-min {
     height: 870px;
 
+    &--page {
+      height: 100%;
+    }
+
     &::after {
       position: absolute;
       bottom: 0;
@@ -17,6 +21,18 @@
       height: 200px;
       content: "";
       background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, $color-grey-bg 86.5%);
+    }
+  }
+
+  &__wrap {
+    padding: 20px;
+  }
+
+  &__content {
+    padding: 20px;
+
+    @include sm {
+      padding: 16px 20px 20px 20px;
     }
   }
 
@@ -86,10 +102,10 @@
   &__item {
     background-color: $color-white;
     border-radius: 8px;
-    padding: 20px;
     margin-bottom: 40px;
     width: 100%;
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
 
     @include sm-min {
       margin-bottom: 40px;
@@ -119,7 +135,7 @@
     }
   }
 
-  &__content {
+  &__text {
     font-size: 16px;
     line-height: 22px;
     padding-top: 20px;
@@ -132,13 +148,7 @@
   }
 
   &__pic {
-    @include sm-min {
-      margin-bottom: 20px;
-    }
-
-    @include sm {
-      margin-bottom: 16px;
-    }
+    order: -1;
   }
 
   &__img {
