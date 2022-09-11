@@ -35,23 +35,14 @@
   }
 
   &__link {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    @include go-to-link;
     color: $color-action-reg;
 
     &::after {
       content: '';
-      background-image: url(../img/home/services/LinkArrow.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 12px;
-      height: 12px;
-      position: absolute;
+    @include go-to-arrow;
       left: 83px;
-      top: 4px;
+
       filter: invert(65%) sepia(48%) saturate(950%) hue-rotate(184deg) brightness(165%) contrast(101%);
     }
 
