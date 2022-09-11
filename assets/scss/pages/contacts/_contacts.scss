@@ -1,0 +1,156 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.contacts {
+  padding-top: 81px;
+}
+
+.contacts-form {
+  width: 529px;
+  height: 576px;
+  background-color: $color-grey-bg;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 12px;
+
+  flex-basis: 530px;
+}
+
+.contacts-form__title {
+  font-size: 32px;
+  line-height: 38px;
+  @include gradient;
+}
+
+.contacts-form__name {}
+
+.contacts-form__message {}
+
+.contacts-form__subtitle {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color-grey-text;
+}
+
+.contacts-form__phone {}
+
+.contacts-form__mail {}
+
+.contacts-form__btn {
+  display: block;
+  min-width: 250px;
+  min-height: 50px;
+  margin: 0 auto;
+  color: #ffffff;
+  border: 1px solid #24a3ff;
+  border-radius: 12px;
+  background-color: $color-action-reg;
+  box-shadow: 0 0 20px rgb(36 163 255 / 50%);
+  font-weight: bold;
+}
+
+input {
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+
+
+
+
+::placeholder {
+  color: $color-grey-text;
+  opacity: 1;
+}
+
+textarea {
+  resize: none;
+  padding: 10px 15px 10px 10px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 26px;
+  height: 100%;
+  width: 100%;
+}
+
+
+.contacts-form__item {
+  height: 34%;
+}
+
+
+.contacts__section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-basis: 413px;
+}
+
+.contacts__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contacts__adress,
+.contacts__phone,
+.contacts__email {
+  font-size: 21px;
+  line-height: 30px;
+  color: $color-main;
+}
+
+.contacts__adress {
+  border-bottom: 4px solid $color-grey-sep;
+  padding-bottom: 17px;
+}
+
+.contacts__phone {
+  padding-top: 18px;
+}
+
+.contacts__email {
+  color: $color-action-reg;
+  border-bottom: 4px solid #e6e6f0;
+  padding-bottom: 38px;
+}
+
+.contacts__social {
+  max-width: 185px;
+
+
+}
+
+.contacts__social-link {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color-action-reg;
+  font-weight: bold;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.map {
+  width: 100%;
+  margin-top: 80px;
+  background-color: $color-grey-bg;
+
+&>iframe {
+height: 600px;
+width: 100%;
+  border: none;
+}
+}
