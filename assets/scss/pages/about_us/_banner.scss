@@ -1,0 +1,52 @@
+@use "../../mixins" as *;
+@use "../../presets" as *;
+
+ .banner-team {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  @include md-min {
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link>img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    position: absolute;
+    font-weight: 700;
+    line-height: 113px;
+    text-transform: uppercase;
+    color: #ffffff;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    text-shadow: 0px 15px 30px rgb(40 40 86 / 80%);
+
+    @include lg-min {
+      letter-spacing: 63px;
+      font-size: 96px;
+    }
+
+    @include lg-md {
+      letter-spacing: 45px;
+      font-size: 80px;
+    }
+
+    @include md-sm {
+      letter-spacing: 20px;
+      font-size: 55px;
+    }
+  }
+}

@@ -140,8 +140,10 @@
       align-items: center;
     }
 
-    &:active {
-      background-color: $color-grey-alt;
+    @include sm {
+      &:active {
+        background-color: $color-grey-alt;
+      }
     }
   }
 
@@ -167,7 +169,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
     }
 
     &.active {
