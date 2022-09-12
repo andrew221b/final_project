@@ -1274,7 +1274,7 @@ input {
 
   content: "";
 
-  background-image: url(../../../../assets/img/home/services/DotSeparator.svg);
+  background-image: url(../img/home/services/DotSeparator.svg);
   background-repeat: no-repeat;
 }
 .team__title {
@@ -1638,10 +1638,6 @@ input {
 
   border-radius: 8px;
   background-color: #ffffff;
-}
-.topics-item:hover {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
 }
 .topics-item__content {
   padding: 20px;
@@ -2583,6 +2579,10 @@ input {
     -webkit-columns: 3;
        -moz-columns: 3;
             columns: 3;
+  }
+  .topics-item:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
   }
 }
 @media (min-width: 1043px) and (max-width: 1245px) {
