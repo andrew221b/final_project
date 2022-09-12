@@ -11,10 +11,10 @@
       @include abs-pos;
       z-index: 1;
       width: 100vw;
+      height: 65vh;
       content: "";
-      background-image: url(../img/home/services/Cover.png);
+      background: linear-gradient(180deg, rgba(50, 50, 100, 0.1) 0%, #323264 100%), url(../img/home/services/Cover.png);
       background-repeat: no-repeat;
-      transform: translateY(-15%);
 
       @media (min-width: 1440px) {
         background-size: 100%;
