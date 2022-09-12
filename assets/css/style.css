@@ -1126,9 +1126,9 @@ input {
   grid-template-rows: auto auto 1fr;
 }
 .services-item__title-link {
-  -webkit-transition: 0.2s;
-       -o-transition: 0.2s;
-          transition: 0.2s;
+  -webkit-transition: 0.2s ease-in;
+       -o-transition: 0.2s ease-in;
+          transition: 0.2s ease-in;
 
   color: #24a3ff;
 }
@@ -1629,6 +1629,24 @@ input {
 }
 
 .topics-item {
+  width: 100%;
+  margin-bottom: 40px;
+
+  -webkit-transition: 0.25s ease-out;
+       -o-transition: 0.25s ease-out;
+          transition: 0.25s ease-out;
+
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.topics-item:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+}
+.topics-item__content {
+  padding: 20px;
+}
+.topics-item__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1637,16 +1655,6 @@ input {
   -ms-flex-direction: column;
       flex-direction: column;
 
-  width: 100%;
-  margin-bottom: 40px;
-
-  border-radius: 8px;
-  background-color: #ffffff;
-}
-.topics-item__content {
-  padding: 20px;
-}
-.topics-item__link {
   -webkit-transition: 0.25s;
        -o-transition: 0.25s;
           transition: 0.25s;
@@ -1676,9 +1684,11 @@ input {
   max-width: 372px;
   padding-top: 20px;
 
+  color: black;
   border-top: 4px solid #e6e6f0;
 
   font-size: 16px;
+  font-weight: 400;
   line-height: 22px;
 }
 .topics-item__pic {

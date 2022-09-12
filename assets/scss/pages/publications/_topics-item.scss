@@ -6,8 +6,11 @@
   border-radius: 8px;
   margin-bottom: 40px;
   width: 100%;
-  display: inline-flex;
-  flex-direction: column;
+  transition: .25s ease-out;
+
+&:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
 
   @include sm-min {
     margin-bottom: 40px;
@@ -35,6 +38,8 @@
     line-height: 21px;
     color: $color-action-reg;
     transition: .25s;
+    display: inline-flex;
+    flex-direction: column;
 
     &:hover {
       color: $color-accent;
@@ -61,7 +66,8 @@
     padding-top: 20px;
     border-top: 4px solid #E6E6F0;
     max-width: 372px;
-
+    color: black;
+    font-weight: 400;
     @include sm {
       display: none;
     }
