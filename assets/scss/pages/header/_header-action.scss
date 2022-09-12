@@ -1,5 +1,5 @@
-@use "../../../presets" as *;
-@use "../../../mixins" as *;
+@use "../../presets" as *;
+@use "../../mixins" as *;
 
 .header-action {
   display: flex;
@@ -72,6 +72,7 @@
   }
 
   &__socials {
+    transition: .1s;
 
     &:hover {
       filter: invert(54%) sepia(41%) saturate(3386%) hue-rotate(181deg) brightness(100%) contrast(102%);

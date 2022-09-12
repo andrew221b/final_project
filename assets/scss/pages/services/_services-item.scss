@@ -1,8 +1,6 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-
-
 .services-item {
   display: grid;
   grid-template-rows: auto auto 1fr;
@@ -13,51 +11,9 @@
     align-items: center;
   }
 
-
-  &--page {
-    justify-items: center;
-    align-items: center;
-
-    max-width: 860px;
-    margin: 0 auto;
-    gap: 18px;
-    display: flex;
-    flex-direction: column;
-
-    @include md-min {
-      margin-bottom: 79px;
-    }
-
-    @include md {
-      margin-bottom: 37px;
-    }
-
-    @include sm-min {
-      text-align: center;
-    }
-
-    @include sm {
-      align-items: flex-start
-    }
-  }
-
-
-  &__title-page {
-
-    @include gradient;
-
-    @include md-min {
-      font-size: 42px;
-    }
-
-    @include md {
-      font-size: 32px;
-      line-height: 38px;
-    }
-  }
-
   &__title-link {
     color: $color-action-reg;
+    transition: .2s;
 
     @include md-min {
       font-size: 24px;
@@ -67,6 +23,10 @@
     @include md {
       font-size: 18px;
       line-height: 21px;
+    }
+
+    &:hover {
+      color: $color-accent
     }
   }
 
@@ -79,10 +39,6 @@
 
     @include md {
       width: 64px;
-
-      &--page {
-        width: 100%;
-      }
     }
   }
 
@@ -96,32 +52,11 @@
     @include md-min {
       font-size: 18px;
       line-height: 26px;
-
-      &--page {
-        font-size: 21px;
-        line-height: 30px;
-      }
     }
 
     @include md {
       font-size: 16px;
       line-height: 22px;
-
-      &--page {
-        font-size: 18px;
-        line-height: 26px;
-      }
     }
-  }
-
-  &__action {
-    padding-top: 21px;
-    align-self: center;
-  }
-
-  &__btn {
-    font-size: 14px;
-    line-height: 17px;
-    @include btn-style;
   }
 }

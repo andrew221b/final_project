@@ -3,7 +3,6 @@
 
 .member {
 
-
   @include md-min {
     padding-top: 80px;
     margin-bottom: 80px;
@@ -13,97 +12,91 @@
     padding-top: 25px;
     margin-bottom: 40px;
   }
-}
 
-.member__flex {
-  display: flex;
-  justify-content: center;
+  &__flex {
+    display: flex;
+    justify-content: center;
 
-  @include md-min {
-    gap: 40px;
+    @include md-min {
+      gap: 40px;
+    }
+
+    @include md {
+      gap: 15px;
+      flex-direction: column;
+    }
   }
 
-  @include md {
-    gap: 15px;
-    flex-direction: column;
-  }
-}
-.member__pic {
-}
-.member__img {
-
-  @media (max-width: 458px) {
-    width: 100%;
-    object-fit: cover;
+  &__img {
+    @media (max-width: 458px) {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
-}
-.member__content {
-  display: flex;
+  &__content {
+    display: flex;
     flex-direction: column;
     gap: 10px;
     max-width: 640px;
-}
-.member__name {
-
-@include gradient;
-
-@include md-min {
-  font-size: 42px;
-  line-height: 50px;
-}
-
-@include md {
-  font-size: 32px;
-line-height: 38px;
-}
-}
-.member__contacts {
-  display: flex;
-  border-bottom: 4px solid $color-grey-sep;
-
-  align-items: center;
-
-  @include lg-min {
-    padding-bottom: 17px;
-    gap: 26px;
   }
 
-  @include lg-md {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 17px;
-    gap: 8px;
+  &__name {
+    @include gradient;
+
+    @include md-min {
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @include md {
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 
-  @include md {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 17px;
-    gap: 8px;
+  &__contacts {
+    display: flex;
+    border-bottom: 4px solid $color-grey-sep;
+    align-items: center;
+
+    @include lg-min {
+      padding-bottom: 17px;
+      gap: 26px;
+    }
+
+    @include lg-md {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 17px;
+      gap: 8px;
+    }
+
+    @include md {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 17px;
+      gap: 8px;
+    }
   }
-}
-.member__position {
-  line-height: 22px;
-  color: $color-grey-text;
-}
-.member__mail {
-}
-.member__link {
-  line-height: 19px;
-  color: $color-action-reg;
-transition: .25s;
-  &:hover {
-    color: $color-accent;
+
+  &__position {
+    line-height: 22px;
+    color: $color-grey-text;
   }
-}
-.member__socials {
 
-}
+  &__link {
+    line-height: 19px;
+    color: $color-action-reg;
+    transition: .25s;
 
-.member__description {
+    &:hover {
+      color: $color-accent;
+    }
+  }
 
-  display: flex;
+  &__description {
+    display: flex;
     flex-direction: column;
     gap: 19px;
 
@@ -114,31 +107,23 @@ transition: .25s;
     @include lg {
       padding-top: 9px;
     }
-}
-.member__text {
-  font-size: 18px;
-line-height: 26px;
-}
-.member__education {
-}
-.member__description-title {
-  font-size: 14px;
-line-height: 17px;
-letter-spacing: 1px;
-text-transform: uppercase;
-color: $color-main;
+  }
 
-margin-bottom: 9px;
+  &__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-main;
+    margin-bottom: 9px;
 
-@include lg-min {
-  padding-top: 20px;
-}
-}
-.member__education-text {
-}
-.member__experience {
-}
-.member__experience-title {
-}
-.member__experience-text {
+    @include lg-min {
+      padding-top: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }

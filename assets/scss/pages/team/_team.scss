@@ -1,7 +1,6 @@
 @use "../../mixins" as *;
 @use "../../presets" as *;
 
-
 .team {
   @include sm-min {
     margin-bottom: 50px;

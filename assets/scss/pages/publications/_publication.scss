@@ -3,7 +3,6 @@
 
 .publication {
 
-
   @include md-min {
     padding-top: 60px;
   }
@@ -11,227 +10,60 @@
   @include md {
     padding-top: 30px;
   }
-}
 
-.container {}
+  &__pic {
+    max-width: 906px;
+    margin: 0 auto 35px;
 
-.publication__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  max-width: 906px;
+    @include lg-md {
+      padding: 0 20px;
+    }
 
-
-
-  @include md-min {
-    margin: 0 auto;
-    gap: 33px;
+    @include md {
+      margin-bottom: 16px;
+    }
   }
 
-  @include md {
-    gap: 13px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    max-width: 906px;
+
+    @include md-min {
+      margin: 0 auto;
+      gap: 33px;
+    }
+
+    @include md {
+      gap: 13px;
+    }
   }
-}
 
-.publication__item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 860px;
-
-  &:last-of-type {
+  &__img {
     width: 100%;
-    border-top: 4px solid #e6e6f0;
-    padding: 17px 0 60px;
-  }
-}
+    object-fit: contain;
 
-.publication__title {
-
-  color: $color-main;
-  font-weight: 500;
-
-  @include md-min {
-    font-size: 32px;
-    line-height: 38px;
+    @include md-min {
+      border-radius: 12px;
+    }
   }
 
-  @include md {
-    font-size: 22px;
-    line-height: 26px;
+  &__attention {
+    @include gradient;
+    display: inline-block;
+
+    @include md-min {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 6px;
+    }
+
+    @include md {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 26px;
+    }
   }
-}
-
-.publication__date {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: $color-grey-text;
-  font-weight: bold;
-  border-bottom: 4px solid #e6e6f0;
-
-
-
-  @include md-min {
-    padding-bottom: 40px;
-    margin-bottom: 29px;
-  }
-
-  @include md {
-    padding-bottom: 17px;
-    margin-bottom: 11px;
-  }
-}
-
-.publication__text {
-  font-size: 18px;
-  line-height: 26px;
-  margin-bottom: 8px;
-}
-
-.publication__pic {
-  max-width: 906px;
-  margin: 0 auto 35px;
-
-  @include lg-md {
-    padding: 0 20px;
-  }
-
-  @include md {
-    margin-bottom: 16px;
-  }
-}
-
-.publication__img-main {
-  width: 100%;
-  object-fit: contain;
-
-  @include md-min {
-    border-radius: 12px;
-  }
-}
-
-.publication__attention {
-
-  @include gradient;
-  display: inline-block;
-
-
-  @include md-min {
-    font-size: 42px;
-    line-height: 50px;
-    margin-bottom: 6px;
-  }
-
-  @include md {
-    font-size: 32px;
-    line-height: 38px;
-    margin-bottom: 26px;
-  }
-}
-
-.publication__subtitle {
-
-  color: $color-main-alt;
-  margin-bottom: 9px;
-
-  @include md-min {
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  @include md {
-    font-size: 18px;
-    line-height: 21px;
-  }
-}
-
-.publication__list {
-
-}
-
-.publication__order {
-
-}
-
-.publication__img-second {
-  width: 75%;
-  align-self: center;
-  margin-bottom: 6px;
-}
-
-.publication__note {
-  font-size: 16px;
-  line-height: 22px;
-  color: $color-grey-text;
-  align-self: center;
-
-
-  @include md-min {
-    margin-bottom: 30px;
-  }
-
-  @include md {
-    margin-bottom: 10px;
-  }
-}
-
-.publication__socials {
-
-  display: flex;
-  gap: 11px;
-
-  @include md-min {
-    align-self: flex-start;
-  }
-
-  @include md {
-    align-self: center;
-  }
-}
-
-.publication__socials-link {
-  background: $color-grey-bg;
-  display: flex;
-  padding: 8px;
-  border-radius: 12px;
-  transition: .25s;
-
-  &:hover {
-    transform: scale(1.2);
-  }
-}
-
-.publication__social-img {}
-
-.publication__list {
-
-  list-style: none;
-  counter-reset: li;
-  max-width: 90%;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-
-  @include md-min {
-    margin-bottom: 15px;
-  }
-}
-
-.publication__order::before {
-  content: counter(li) ".";
-  color: red;
-  display: inline-flex;
-  width: 1em;
-  margin-left: -1em;
-  font-weight: 500;
-}
-
-.publication__order {
-  font-size: 18px;
-  line-height: 26px;
-  counter-increment: li;
-  margin-bottom: 15px;
 }

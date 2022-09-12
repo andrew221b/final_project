@@ -2,155 +2,126 @@
 @use "../../mixins" as *;
 
 .contacts {
-  padding-top: 81px;
-}
 
-.contacts-form {
-  width: 529px;
-  height: 576px;
-  background-color: $color-grey-bg;
+  @include sm-min {
+    padding-top: 81px;
+  }
 
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  border-radius: 12px;
+  @include sm {
+    padding-top: 28px;
+  }
 
-  flex-basis: 530px;
-}
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
-.contacts-form__title {
-  font-size: 32px;
-  line-height: 38px;
-  @include gradient;
-}
+    @include sm-min {
+      flex-basis: 413px;
+    }
 
-.contacts-form__name {}
+    @include sm {
+      width: 100%;
+    }
+  }
 
-.contacts-form__message {}
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
-.contacts-form__subtitle {
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: $color-grey-text;
-}
+    @include sm-min {
+      gap: 20px;
+    }
 
-.contacts-form__phone {}
+    @include sm {
+      flex-direction: column;
+      gap: 38px;
+    }
+  }
 
-.contacts-form__mail {}
+  &__adress,
+  &__phone,
+  &__email {
+    font-size: 21px;
+    line-height: 30px;
+    color: $color-main;
+  }
 
-.contacts-form__btn {
-  display: block;
-  min-width: 250px;
-  min-height: 50px;
-  margin: 0 auto;
-  color: #ffffff;
-  border: 1px solid #24a3ff;
-  border-radius: 12px;
-  background-color: $color-action-reg;
-  box-shadow: 0 0 20px rgb(36 163 255 / 50%);
-  font-weight: bold;
-}
+  &__adress {
+    border-bottom: 4px solid $color-grey-sep;
+    padding-bottom: 17px;
+  }
 
-input {
-  border-radius: 8px;
-  border: none;
-  width: 100%;
-  padding: 10px;
-  outline: none;
-}
+  &__phone {
+    padding-top: 18px;
+  }
 
+  &__email {
+    padding-bottom: 38px;
+    border-bottom: 4px solid $color-grey-sep;
 
+    &-link {
+      color: $color-action-reg;
+      transition: .25s;
 
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
 
+  &__social {
+    max-width: 185px;
+    transition: .1s;
 
-::placeholder {
-  color: $color-grey-text;
-  opacity: 1;
-}
+    &:hover {
+      filter: invert(1000%) sepia(59%) saturate(1000%) hue-rotate(332deg) brightness(96%) contrast(95%);
+    }
 
-textarea {
-  resize: none;
-  padding: 10px 15px 10px 10px;
-  outline: none;
-  border: none;
-  border-radius: 8px;
-  font-size: 18px;
-  line-height: 26px;
-  height: 100%;
-  width: 100%;
-}
+    &-link {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $color-action-reg;
+      font-weight: bold;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      transition: .25s;
+    }
+  }
 
+  &__map {
+    width: 100%;
+    background-color: $color-grey-bg;
 
-.contacts-form__item {
-  height: 34%;
-}
+    &>iframe {
+      height: 600px;
+      width: 100%;
+      border: none;
+    }
 
+    @include sm-min {
+      margin-top: 80px;
+    }
 
-.contacts__section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  flex-basis: 413px;
-}
+    @include sm {
+      margin-top: 43px;
+    }
 
-.contacts__flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.contacts__adress,
-.contacts__phone,
-.contacts__email {
-  font-size: 21px;
-  line-height: 30px;
-  color: $color-main;
-}
-
-.contacts__adress {
-  border-bottom: 4px solid $color-grey-sep;
-  padding-bottom: 17px;
-}
-
-.contacts__phone {
-  padding-top: 18px;
-}
-
-.contacts__email {
-  color: $color-action-reg;
-  border-bottom: 4px solid #e6e6f0;
-  padding-bottom: 38px;
-}
-
-.contacts__social {
-  max-width: 185px;
-
-
-}
-
-.contacts__social-link {
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: $color-action-reg;
-  font-weight: bold;
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.map {
-  width: 100%;
-  margin-top: 80px;
-  background-color: $color-grey-bg;
-
-&>iframe {
-height: 600px;
-width: 100%;
-  border: none;
-}
+    &-title {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  }
 }

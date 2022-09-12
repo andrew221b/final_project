@@ -1,0 +1,55 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.services-content {
+  max-width: 1131px;
+  margin: 0 auto;
+  border-top: 4px solid #9898b2;
+
+  &__title {
+    color: $color-white;
+    font-weight: 500;
+    padding-top: 19px;
+    margin-bottom: 22px;
+
+    @include md-min {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    @include md {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    max-width: 1090px;
+    margin: 0 auto;
+    column-gap: 50px;
+    row-gap: 20px;
+
+    @include md-min {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__direction {
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-white;
+
+    &::before {
+      content: '';
+      background-image: url(../../../../assets/img/home/services/DotSeparator.svg);
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      padding-bottom: 8px;
+      margin-left: -12px;
+      padding-right: 12px;
+    }
+  }
+}

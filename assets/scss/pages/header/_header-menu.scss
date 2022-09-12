@@ -1,5 +1,5 @@
-@use "../../../mixins" as *;
-@use "../../../presets" as *;
+@use "../../mixins" as *;
+@use "../../presets" as *;
 
 .header-menu {
   justify-self: end;
@@ -117,13 +117,13 @@
 
       &::before {
         content: "";
-      background-image: url(../img/header/SymbolSlash.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 30px;
-      height: 30px;
-      top: 10px;
-      position: absolute;
+        background-image: url(../img/header/SymbolSlash.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        position: absolute;
       }
     }
   }
@@ -132,12 +132,12 @@
 
     &.burger {
       background-color: $color-grey-bg;
-    width: 60%;
-    height: 13%;
-    display: flex;
-    border-radius: 12px;
-    justify-content: center;
-    align-items: center;
+      width: 60%;
+      height: 13%;
+      display: flex;
+      border-radius: 12px;
+      justify-content: center;
+      align-items: center;
     }
 
     &:active {
@@ -163,12 +163,13 @@
       font-size: 24px;
       color: $color-action-reg;
       width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
     }
+
     &.active {
       color: $color-accent;
 
@@ -176,7 +177,5 @@
         border-bottom: 2px solid $color-accent;
       }
     }
-
-
   }
 }

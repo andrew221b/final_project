@@ -1,0 +1,80 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.services-description {
+  justify-items: center;
+  align-items: center;
+  max-width: 860px;
+  margin: 0 auto;
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
+
+  @include md-min {
+    margin-bottom: 79px;
+  }
+
+  @include md {
+    margin-bottom: 37px;
+  }
+
+  @include sm-min {
+    text-align: center;
+  }
+
+  @include sm {
+    align-items: flex-start
+  }
+
+  &__title {
+    @include gradient;
+
+    @include md-min {
+      font-size: 42px;
+    }
+
+    @include md {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  &__pic {
+    order: -1;
+    display: flex;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 21px;
+    line-height: 30px;
+    color: $color-white;
+
+    @include md {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  &__action {
+    padding-top: 21px;
+    align-self: center;
+  }
+
+  &__btn {
+    font-size: 14px;
+    line-height: 17px;
+    @include btn-style;
+
+    &:hover {
+      background: $color-action-hover;
+    }
+
+    &:active {
+      background: $color-action-active;
+    }
+  }
+}

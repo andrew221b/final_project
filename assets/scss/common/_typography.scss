@@ -62,3 +62,18 @@ body {
   }
 }
 
+input {
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+::placeholder {
+  color: $color-grey-text;
+  opacity: 1;
+}
+
+
+

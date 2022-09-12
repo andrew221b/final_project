@@ -1,0 +1,122 @@
+@use "../../mixins" as *;
+@use "../../presets" as *;
+
+.footer {
+  padding-bottom: 39px;
+  background-color: $color-grey-bg;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    border-top: 4px solid $color-grey-sep;
+    padding-top: 29px;
+
+    &.non-visible {
+      border-top: none;
+    }
+
+    @include sm {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+    }
+  }
+
+  &-contacts {
+    column-gap: 29px;
+
+    @include md-min {
+      display: grid;
+      grid-template-areas: 'ad ad map'
+        'fb tel mail ';
+      grid-template-columns: min-content 1fr 1fr;
+      max-width: 624px;
+      row-gap: 22px;
+      align-items: center;
+    }
+
+    @include md {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      align-items: flex-start;
+    }
+
+    @include sm {
+      align-items: center;
+    }
+
+    &__adress {
+      line-height: 19px;
+      color: $color-main;
+      font-weight: 500;
+      font-style: normal;
+      grid-area: ad;
+    }
+
+    &__map {
+      padding-left: 4px;
+      grid-area: map;
+
+      &-link {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $color-action-reg;
+        transition: .25s;
+
+        &:hover {
+          color: $color-accent;
+        }
+      }
+    }
+
+    &__social {
+      grid-area: fb;
+      transition: .1s;
+
+      &:hover {
+        filter: invert(1000%) sepia(59%) saturate(1000%) hue-rotate(332deg) brightness(96%) contrast(95%);
+      }
+    }
+
+    &__tel {
+      grid-area: tel;
+
+      &-link {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: $color-main-alt;
+      }
+    }
+
+    &__mail {
+      grid-area: mail;
+
+      &-link {
+        transition: .25s;
+        font-weight: bold;
+        line-height: 19px;
+        letter-spacing: 1px;
+        color: $color-action-reg;
+
+        &:hover {
+          color: $color-accent;
+        }
+      }
+    }
+  }
+
+  &-copyright {
+    line-height: 19px;
+    color: $color-grey-text;
+
+    @include md-sm {
+      align-self: flex-end;
+    }
+  }
+}

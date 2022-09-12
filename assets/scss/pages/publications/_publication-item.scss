@@ -1,0 +1,150 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.publication-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 860px;
+
+  &:last-of-type {
+    width: 100%;
+    border-top: 4px solid #e6e6f0;
+    padding: 17px 0 60px;
+  }
+
+  &__title {
+    color: $color-main;
+    font-weight: 500;
+
+    @include md-min {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    @include md {
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+
+  &__date {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-grey-text;
+    font-weight: bold;
+    border-bottom: 4px solid #e6e6f0;
+
+    @include md-min {
+      padding-bottom: 40px;
+      margin-bottom: 29px;
+    }
+
+    @include md {
+      padding-bottom: 17px;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
+
+  &__pic {
+    text-align: center;
+  }
+
+  &__img {
+    width: 75%;
+    align-self: center;
+    margin-bottom: 6px;
+  }
+
+  &__subtitle {
+    color: $color-main-alt;
+    margin-bottom: 9px;
+
+    @include md-min {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    @include md {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &__note {
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-grey-text;
+    align-self: center;
+
+    @include md-min {
+      margin-bottom: 30px;
+    }
+
+    @include md {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    counter-reset: li;
+    max-width: 90%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+
+    @include md-min {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__order {
+    font-size: 18px;
+    line-height: 26px;
+    counter-increment: li;
+    margin-bottom: 15px;
+
+    &::before {
+      content: counter(li) ".";
+      color: red;
+      display: inline-flex;
+      width: 1em;
+      margin-left: -1em;
+      font-weight: 500;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 11px;
+
+    @include md-min {
+      align-self: flex-start;
+    }
+
+    @include md {
+      align-self: center;
+    }
+
+    &-link {
+      background: $color-grey-bg;
+      display: flex;
+      padding: 8px;
+      border-radius: 12px;
+      transition: .25s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

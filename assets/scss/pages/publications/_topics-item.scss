@@ -1,42 +1,45 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-  .topics-item {
-    background-color: $color-white;
-    border-radius: 8px;
-    margin-bottom: 40px;
-    width: 100%;
-    display: inline-flex;
-    flex-direction: column;
+.topics-item {
+  background-color: $color-white;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
 
-    @include sm-min {
-      margin-bottom: 40px;
+  @include sm-min {
+    margin-bottom: 40px;
+  }
+
+  @include sm {
+    margin-bottom: 20px;
+
+    &.non-visible {
+      display: none;
     }
+  }
+
+  &__content {
+    padding: 20px;
 
     @include sm {
-      margin-bottom: 20px;
-
-      &.non-visible {
-        display: none;
-      }
+      padding: 16px 20px 20px 20px;
     }
+  }
 
-    &__content {
-      padding: 20px;
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-action-reg;
+    transition: .25s;
 
-      @include sm {
-        padding: 16px 20px 20px 20px;
-      }
+    &:hover {
+      color: $color-accent;
     }
-
-    &__link {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
-      color: $color-action-reg;
-    }
-
-
+  }
 
   &__date {
     font-weight: bold;
@@ -46,7 +49,6 @@
     text-transform: uppercase;
     color: $color-grey-text;
     padding-top: 10px;
-
 
     @include sm-min {
       margin-bottom: 18px;
@@ -73,5 +75,4 @@
     width: 100%;
     object-fit: cover;
   }
-
-  }
+}

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Hlegal</title>
+  <link rel="icon" type="image/x-icon" href="../../assets/img/header/SymbolSlash.svg">
   <link rel="stylesheet" href="../../assets/css/normalize.css">
   <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
@@ -20,7 +21,7 @@
               <img src="../../assets/img/header/LogoDark.svg" alt="Logo">
             </a>
           </div>
-          <div class="header-logo__page">публікації</div>
+          <div class="header-logo__page">контакти</div>
         </div>
 
         <nav class="header-menu">
@@ -41,10 +42,10 @@
               <a class="header-menu__link" href="../team/team.html">команда</a>
             </li>
             <li class="header-menu__item">
-              <a class="header-menu__link active" href="">публікації</a>
+              <a class="header-menu__link" href="../publications/topics.html">публікації</a>
             </li>
             <li class="header-menu__item">
-              <a class="header-menu__link" href="">контакти</a>
+              <a class="header-menu__link active" href="#">контакти</a>
             </li>
           </ul>
         </nav>
@@ -57,7 +58,7 @@
           </div>
 
           <div class="header-action__locate">
-            <a class="header-action__locate-link" target="_blank" href="https://goo.gl/maps/DiZG1ZLpYvbHSMgR9">Одеса,
+            <a class="header-action__locate-link" href="../contacts/contacts.html#map">Одеса,
               Адміральський пр., 3</a>
           </div>
 
@@ -78,19 +79,18 @@
   </header>
 
   <main class="main">
-
     <section class="contacts">
-
       <div class="container">
         <div class="contacts__flex">
-
           <div class="contacts__section">
             <div class="contacts__adress">Одеса, Адміральський пр., 3</div>
             <div class="contacts__phone">+38 (050) 390 15 95</div>
-            <div class="contacts__email">contact@hlegals.net</div>
+            <div class="contacts__email">
+              <a href="mailto:contact@hlegals.net" class="contacts__email-link">contact@hlegals.net</a>
+            </div>
             <div class="contacts__social">
-              <a href="" class="contacts__social-link"><img src="../../assets/img/footer/FacebookBlue.svg"
-                  alt=""><span>Наша сторінка в фейсбуці</span></a>
+              <a href="https://www.facebook.com/" target="_blank" class="contacts__social-link"><img
+                  src="../../assets/img/footer/FacebookBlue.svg" alt=""><span>Наша сторінка в фейсбуці</span></a>
             </div>
           </div>
 
@@ -117,18 +117,16 @@
             </div>
 
             <button class="contacts-form__btn">Надіслати запит</button>
-
           </form>
         </div>
       </div>
     </section>
 
-
-    <section class="map" id="map">
+    <section class="contacts__map" id="map">
+      <h4 class="contacts__map-title">Ми на мапі</h4>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2749.638466419027!2d30.7379414!3d46.436045!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63396894457b7%3A0x7f6c5236cbcb70c8!2sAdmiral&#39;s&#39;kyi%20Ave%2C%203%2C%20Odesa%2C%20Odes&#39;ka%20oblast%2C%2065000!5e0!3m2!1sen!2sua!4v1662919311718!5m2!1sen!2sua"
-        allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
 
@@ -138,7 +136,7 @@
         <div class="footer-contacts">
           <address class="footer-contacts__adress">Одеса, Адміральський пр., 3</address>
           <div class="footer-contacts__map">
-            <a class="footer-contacts__map-link" href="">Подивитися на мапі</a>
+            <a class="footer-contacts__map-link" href="contacts.html#map">Подивитися на мапі</a>
           </div>
           <div class="footer-contacts__social">
             <a class="footer-contacts__social-link" href="https://www.facebook.com/" target="_blank">
@@ -161,9 +159,6 @@
       </div>
     </div>
   </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="../../assets/js/main.js"></script>
 </body>
 
 </html>

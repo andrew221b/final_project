@@ -1,5 +1,5 @@
-@use "../../../mixins" as *;
-@use "../../../presets" as *;
+@use "../../mixins" as *;
+@use "../../presets" as *;
 
 .header-logo {
   @include lg-min {
@@ -39,8 +39,6 @@
         width: 12px;
         height: 24px;
       }
-
-
     }
 
     &::after {

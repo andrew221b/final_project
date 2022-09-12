@@ -1,8 +1,5 @@
-@use "../../../mixins" as *;
-@use "../../../presets" as *;
-
-
-.body::before {}
+@use "../../mixins" as *;
+@use "../../presets" as *;
 
 .header {
   &--services {

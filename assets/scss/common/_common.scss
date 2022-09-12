@@ -21,7 +21,7 @@
       padding-top: 50px;
     }
   }
-  
+
 }
 
 .slider{
@@ -38,12 +38,13 @@
     border-radius: 8px;
     border: none;
     background-color: $color-action-reg;
+    cursor: pointer;
 
     &.active {
       opacity: 1;
     }
 
-    &:hover {
+    &:hover:not(.active) {
       opacity: 0.6;
      }
   }

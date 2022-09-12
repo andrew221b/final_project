@@ -1,8 +1,7 @@
-@use "../../../presets" as *;
-@use "../../../mixins" as *;
+@use "../../presets" as *;
+@use "../../mixins" as *;
 
 .quote {
-
 
   &__flex {
     background: $color-grey-bg;
@@ -40,9 +39,8 @@
 
     &::after {
       content: '';
-    @include go-to-arrow;
+      @include go-to-arrow;
       left: 83px;
-
       filter: invert(65%) sepia(48%) saturate(950%) hue-rotate(184deg) brightness(165%) contrast(101%);
     }
 
@@ -85,7 +83,6 @@
     line-height: 21px;
     color: $color-grey-text;
     position: relative;
-
 
     @include lg-min {
       padding-top: 20px;
