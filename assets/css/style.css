@@ -1126,9 +1126,9 @@ input {
   grid-template-rows: auto auto 1fr;
 }
 .services-item__title-link {
-  -webkit-transition: 0.2s ease-in;
-       -o-transition: 0.2s ease-in;
-          transition: 0.2s ease-in;
+  -webkit-transition: 0.3s;
+       -o-transition: 0.3s;
+          transition: 0.3s;
 
   color: #24a3ff;
 }
@@ -1258,24 +1258,25 @@ input {
   row-gap: 20px;
 }
 .services-content__direction {
+  position: relative;
+
   color: #ffffff;
 
   font-size: 18px;
   line-height: 26px;
 }
 .services-content__direction::before {
-  display: inline-block;
+  position: absolute;
+  top: 11px;
+  left: -12px;
 
-  width: 7px;
-  height: 7px;
-  margin-left: -12px;
-  padding-right: 12px;
-  padding-bottom: 8px;
+  width: 6px;
+  height: 6px;
 
   content: "";
 
-  background-image: url(../img/home/services/DotSeparator.svg);
-  background-repeat: no-repeat;
+  border-radius: 50%;
+  background: #f0145a;
 }
 .team__title {
   max-width: 865px;

@@ -13,7 +13,7 @@
 
   &__title-link {
     color: $color-action-reg;
-    transition: .2s ease-in;
+    transition: .3s;
 
     @include md-min {
       font-size: 24px;
@@ -26,7 +26,7 @@
     }
 
     &:hover {
-      color: $color-accent
+      color: $color-accent;
     }
   }
 

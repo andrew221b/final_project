@@ -39,17 +39,17 @@
     font-size: 18px;
     line-height: 26px;
     color: $color-white;
+    position: relative;
 
     &::before {
-      content: '';
-      background-image: url(../img/home/services/DotSeparator.svg);
-      background-repeat: no-repeat;
-      display: inline-block;
-      width: 7px;
-      height: 7px;
-      padding-bottom: 8px;
-      margin-left: -12px;
-      padding-right: 12px;
+      content: "";
+    position: absolute;
+    background: $color-accent;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: 11px;
+    left: -12px;
     }
   }
 }
