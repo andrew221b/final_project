@@ -176,15 +176,10 @@ input {
 }
 .header--service::before {
   position: absolute;
-  position: absolute;
   z-index: 1;
   top: 0;
-  top: 0;
-  right: 0;
   right: 0;
   bottom: 0;
-  bottom: 0;
-  left: 0;
   left: 0;
 
   width: 100vw;
@@ -194,7 +189,7 @@ input {
       -ms-transform: translateY(-15%);
           transform: translateY(-15%);
 
-  background-image: url(../../../../../assets/img/home/services/Cover.png);
+  background-image: url(../img/home/services/Cover.png);
   background-repeat: no-repeat;
 }
 .header__grid--abs {
