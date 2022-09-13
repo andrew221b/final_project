@@ -325,6 +325,9 @@ input {
 .header-action__lang-link--dark-bg {
   color: #ffffff;
 }
+.header-action__locate {
+  max-width: 400px;
+}
 .header-action__locate-link {
   color: #b3b3ba;
 }
