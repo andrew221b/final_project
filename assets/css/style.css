@@ -1621,9 +1621,7 @@ input {
 }
 
 .topics-item {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
 
   max-width: 413px;
   min-height: 236px;

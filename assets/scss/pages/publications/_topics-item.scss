@@ -8,13 +8,13 @@
   max-width: 413px;
   min-height: 236px;
   transition: .25s ease-out;
-  display: inline-flex;
+  display: inline-block;
 
-@include lg-min {
-  &:hover {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  @include lg-min {
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
   }
-}
 
   @include sm-min {
     margin-bottom: 40px;
@@ -72,6 +72,7 @@
     color: black;
     font-weight: 400;
     font-size: 16px;
+
     @include sm {
       display: none;
     }
