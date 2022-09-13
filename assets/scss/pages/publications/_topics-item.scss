@@ -5,7 +5,8 @@
   background-color: $color-white;
   border-radius: 8px;
   margin-bottom: 40px;
-  width: 100%;
+  max-width: 413px;
+  min-height: 236px;
   transition: .25s ease-out;
   display: inline-flex;
 

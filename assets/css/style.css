@@ -1625,7 +1625,8 @@ input {
   display: -ms-inline-flexbox;
   display: inline-flex;
 
-  width: 100%;
+  max-width: 413px;
+  min-height: 236px;
   margin-bottom: 40px;
 
   -webkit-transition: 0.25s ease-out;
