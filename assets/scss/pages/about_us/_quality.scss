@@ -25,30 +25,28 @@
     order: 1;
 
     @include md-min {
-      font-size: 42px;
-      line-height: 50px;
+      font-size: 2.625em;
       padding-top: 17px;
     }
 
     @include md {
-      font-size: 32px;
-      line-height: 38px;
+      font-size: 2em;
     }
   }
 
   &__text {
-    font-size: 21px;
+    font-size: 1.31em;
     line-height: 30px;
     max-width: 640px;
     padding-top: 20px;
 
     @include md-min {
-      font-size: 21px;
+      font-size: 1.31em;
       line-height: 30px;
     }
 
     @include md {
-      font-size: 18px;
+      font-size: 1.125em;
       line-height: 26px;
     }
   }

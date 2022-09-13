@@ -61,7 +61,7 @@
 
       &-link {
         font-weight: bold;
-        font-size: 12px;
+        font-size: 0.75em;
         line-height: 14px;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -88,8 +88,6 @@
 
       &-link {
         font-weight: bold;
-        font-size: 16px;
-        line-height: 19px;
         color: $color-main-alt;
       }
     }

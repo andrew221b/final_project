@@ -30,12 +30,11 @@
     @include gradient;
 
     @include md-min {
-      font-size: 42px;
+      font-size: 2.625em;
     }
 
     @include md {
-      font-size: 32px;
-      line-height: 38px;
+      font-size: 2em;
     }
   }
 
@@ -49,12 +48,12 @@
   }
 
   &__text {
-    font-size: 21px;
+    font-size: 1.31em;
     line-height: 30px;
     color: $color-white;
 
     @include md {
-      font-size: 18px;
+      font-size: 1.125em;
       line-height: 26px;
     }
   }
@@ -65,8 +64,7 @@
   }
 
   &__btn {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 0.875em;
     @include btn-style;
 
     &:hover {

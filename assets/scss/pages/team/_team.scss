@@ -11,22 +11,19 @@
   }
 
   &__title {
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 2.625em;
     max-width: 865px;
     margin: 0 auto;
 
     @include gradient;
 
     @include md-min {
-      font-size: 42px;
-      line-height: 50px;
+      font-size: 2.625em;
       padding: 81px 0 80px;
     }
 
     @include md {
-      font-size: 32px;
-      line-height: 38px;
+      font-size: 2em;
       padding: 23px 0 20px;
     }
   }
@@ -110,14 +107,13 @@
   }
 
   &__name-link {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 21px;
     color: $color-main;
     font-weight: 500;
     transition: .25s;
 
     @include xs {
-      font-size: 16px;
       line-height: 13px;
     }
   }
@@ -126,12 +122,11 @@
     padding-top: 6px;
 
     &-link {
-      font-size: 16px;
       line-height: 22px;
       color: $color-grey-text;
 
       @include xs {
-        font-size: 14px;
+        font-size: 0.875em;
         line-height: 20px;
       }
     }

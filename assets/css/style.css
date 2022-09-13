@@ -259,9 +259,8 @@ input {
 
   color: #ffffff;
 
-  font-size: 38px;
+  font-size: 2.375em;
   font-weight: 500;
-  line-height: 45px;
 }
 .header-home__btn {
   position: absolute;
@@ -310,7 +309,7 @@ input {
 
   color: #b3b3ba;
 
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 700;
 }
 .header-action__lang-link.active {
@@ -486,7 +485,7 @@ input {
 
   color: #24a3ff;
 
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 21px;
 }
 .header-menu__link:hover {
@@ -511,7 +510,7 @@ input {
 
   color: #24a3ff;
 
-  font-size: 24px;
+  font-size: 1.5em;
 }
 .header-menu__link.active {
   color: #f0145a;
@@ -523,7 +522,7 @@ input {
 
   color: #323264;
 
-  font-size: 38px;
+  font-size: 2.375em;
 }
 .header-logo__page--dark-bg {
   color: #ffffff;
@@ -660,7 +659,7 @@ input {
 
   color: #24a3ff;
 
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: bold;
   line-height: 17px;
 }
@@ -711,7 +710,7 @@ input {
 
   color: #b3b3ba;
 
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 21px;
 }
 .quote__position {
@@ -719,7 +718,6 @@ input {
 
   color: #b3b3ba;
 
-  font-size: 16px;
   line-height: 22px;
 }
 
@@ -748,8 +746,7 @@ input {
   border-radius: 12px 0 0 0;
   background-color: #f5f5fa;
 
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.875em;
 
   grid-area: cases;
 }
@@ -785,7 +782,7 @@ input {
 .cases__partner {
   color: #b3b3ba;
 
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 26px;
 }
 
@@ -828,8 +825,7 @@ input {
 
   color: #323264;
 
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.875em;
 }
 .partners__item {
   -webkit-transition: 0.2s ease-in;
@@ -897,7 +893,7 @@ input {
           background-clip: text;
   background-size: 100%;
 
-  font-size: 36px;
+  font-size: 2.25em;
   font-weight: bold;
   line-height: 42px;
 
@@ -923,7 +919,7 @@ input {
 
   color: #323264;
 
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 21px;
 }
 
@@ -1004,7 +1000,7 @@ input {
   max-width: 640px;
   padding-top: 20px;
 
-  font-size: 21px;
+  font-size: 1.31em;
   line-height: 30px;
 }
 
@@ -1021,8 +1017,7 @@ input {
 
   color: #323264;
 
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.875em;
 }
 .achievements__grid {
   display: grid;
@@ -1069,8 +1064,8 @@ input {
   background: #e7e7f2;
 }
 .services--open {
-  background: -o-linear-gradient(250deg, #323264 11%, #323264 68%, #643e72 90%);
-  background:    linear-gradient(200deg, #323264 11%, #323264 68%, #643e72 90%);
+  background: -o-linear-gradient(250deg, #323264 11%, #323264 68%, #643e72 93%);
+  background:    linear-gradient(200deg, #323264 11%, #323264 68%, #643e72 93%);
 }
 .services__page {
   position: relative;
@@ -1082,7 +1077,7 @@ input {
   opacity: 0.5;
   color: #ffffff;
 
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: bold;
   line-height: 17px;
 }
@@ -1184,7 +1179,7 @@ input {
 .services-description__text {
   color: #ffffff;
 
-  font-size: 21px;
+  font-size: 1.31em;
   line-height: 30px;
 }
 .services-description__action {
@@ -1216,9 +1211,8 @@ input {
   -webkit-box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
           box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
 
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: bold;
-  line-height: 17px;
 }
 .services-description__btn:hover {
   background: #0085ff;
@@ -1259,7 +1253,7 @@ input {
 
   color: #ffffff;
 
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 26px;
 }
 .services-content__direction::before {
@@ -1286,8 +1280,7 @@ input {
           background-clip: text;
   background-size: 100%;
 
-  font-size: 42px;
-  line-height: 50px;
+  font-size: 2.625em;
 
   -webkit-text-fill-color: transparent;
 }
@@ -1354,7 +1347,7 @@ input {
 
   color: #323264;
 
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 500;
   line-height: 21px;
 }
@@ -1364,7 +1357,6 @@ input {
 .team__position-link {
   color: #b3b3ba;
 
-  font-size: 16px;
   line-height: 22px;
 }
 .member__flex {
@@ -1444,11 +1436,10 @@ input {
 
   color: #323264;
 
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.875em;
 }
 .member__text {
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 26px;
 }
 
@@ -1476,7 +1467,7 @@ input {
 
   color: #24a3ff;
 
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: bold;
   line-height: 17px;
 }
@@ -1613,7 +1604,7 @@ input {
   outline: none;
   background: none;
 
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: bold;
   line-height: 21px;
 }
@@ -1641,9 +1632,9 @@ input {
   padding: 20px;
 }
 .topics-item__link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1655,7 +1646,7 @@ input {
 
   color: #24a3ff;
 
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 500;
   line-height: 21px;
 }
@@ -1670,7 +1661,7 @@ input {
 
   color: #b3b3ba;
 
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: bold;
   line-height: 14px;
 }
@@ -1681,7 +1672,6 @@ input {
   color: black;
   border-top: 4px solid #e6e6f0;
 
-  font-size: 16px;
   font-weight: 400;
   line-height: 22px;
 }
@@ -1766,14 +1756,14 @@ input {
   color: #b3b3ba;
   border-bottom: 4px solid #e6e6f0;
 
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: bold;
   line-height: 14px;
 }
 .publication-item__text {
   margin-bottom: 8px;
 
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 26px;
 }
 .publication-item__pic {
@@ -1797,7 +1787,6 @@ input {
 
   color: #b3b3ba;
 
-  font-size: 16px;
   line-height: 22px;
 }
 .publication-item__list {
@@ -1822,7 +1811,7 @@ input {
 
   counter-increment: li;
 
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 26px;
 }
 .publication-item__order::before {
@@ -1892,7 +1881,7 @@ input {
 .contacts__email {
   color: #323264;
 
-  font-size: 21px;
+  font-size: 1.3em;
   line-height: 30px;
 }
 .contacts__adress {
@@ -1945,7 +1934,7 @@ input {
 
   color: #24a3ff;
 
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: bold;
   line-height: 16px;
 
@@ -2017,8 +2006,7 @@ input {
 
   color: #b3b3ba;
 
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.875em;
 }
 .contacts-form__btn {
   display: block;
@@ -2053,7 +2041,7 @@ input {
   border-radius: 8px;
   outline: none;
 
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 26px;
 }
 .contacts-form__item {
@@ -2108,7 +2096,7 @@ input {
 
   color: #24a3ff;
 
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: bold;
   line-height: 14px;
 }
@@ -2132,9 +2120,7 @@ input {
 .footer-contacts__tel-link {
   color: #46466e;
 
-  font-size: 16px;
   font-weight: bold;
-  line-height: 19px;
 }
 .footer-contacts__mail {
   grid-area: mail;
@@ -2184,15 +2170,14 @@ input {
     row-gap: 20px;
   }
   .cases__description {
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 28px;
   }
   .about-description__title {
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 2.625em;
   }
   .about-description__text {
-    font-size: 21px;
+    font-size: 1.3em;
     line-height: 30px;
   }
   .services-description {
@@ -2232,7 +2217,7 @@ input {
             columns: 2;
   }
   .topics__title {
-    font-size: 42px;
+    font-size: 2.625em;
   }
   .topics__action {
     position: absolute;
@@ -2265,8 +2250,7 @@ input {
     margin-top: 80px;
   }
   .contacts-form__title {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2em;
   }
 }
 @media (min-width: 840px) {
@@ -2337,11 +2321,10 @@ input {
   .quality__title {
     padding-top: 17px;
 
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 2.625em;
   }
   .quality__text {
-    font-size: 21px;
+    font-size: 1.31em;
     line-height: 30px;
   }
   .achievements__grid {
@@ -2355,21 +2338,21 @@ input {
     gap: 60px;
   }
   .services-item__title-link {
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 28px;
   }
   .services-item__description {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 26px;
   }
   .services-description {
     margin-bottom: 79px;
   }
   .services-description__title {
-    font-size: 42px;
+    font-size: 2.625em;
   }
   .services-content__title {
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 28px;
   }
   .services-content__list {
@@ -2378,8 +2361,7 @@ input {
   .team__title {
     padding: 81px 0 80px;
 
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 2.625em;
   }
   .team__grid {
     grid-template-columns: repeat(3, 1fr);
@@ -2392,8 +2374,7 @@ input {
     gap: 40px;
   }
   .member__name {
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 2.625em;
   }
   .publication {
     padding-top: 60px;
@@ -2409,19 +2390,17 @@ input {
   .publication__attention {
     margin-bottom: 6px;
 
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 2.625em;
   }
   .publication-item__title {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2em;
   }
   .publication-item__date {
     margin-bottom: 29px;
     padding-bottom: 40px;
   }
   .publication-item__subtitle {
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 28px;
   }
   .publication-item__note {
@@ -2489,8 +2468,7 @@ input {
   .experience-slider__title {
     text-align: right;
 
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 2.625em;
   }
   .experience-slider__title.active::after {
     position: absolute;
@@ -2511,10 +2489,10 @@ input {
     max-width: 600px;
   }
   .experience-slider__subtitle {
-    font-size: 32px;
+    font-size: 2em;
   }
   .experience-slider__text {
-    font-size: 21px;
+    font-size: 1.31em;
   }
   .experience-slider__indicators {
     display: none;
@@ -2525,7 +2503,7 @@ input {
   .quote__text {
     max-width: 90%;
 
-    font-size: 42px;
+    font-size: 2.625em;
   }
   .quote__name {
     padding-top: 20px;
@@ -2549,7 +2527,7 @@ input {
   .banner-team__title {
     letter-spacing: 63px;
 
-    font-size: 96px;
+    font-size: 6em;
   }
   .services {
     padding-top: 70px;
@@ -2557,7 +2535,7 @@ input {
   .services__title {
     margin-bottom: 60px;
 
-    font-size: 42px;
+    font-size: 2.625em;
   }
   .services__grid {
     grid-template-columns: repeat(3, 1fr);
@@ -2641,8 +2619,7 @@ input {
     -webkit-background-clip: text;
             background-clip: text;
 
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 0.875em;
 
     -webkit-text-fill-color: transparent;
   }
@@ -2652,12 +2629,12 @@ input {
   .experience-slider__subtitle {
     margin-bottom: 15px;
 
-    font-size: 22px;
+    font-size: 1.375em;
   }
   .experience-slider__text {
     margin-bottom: 20px;
 
-    font-size: 18px;
+    font-size: 1.125em;
   }
   .experience-slider__indicators {
     display: -webkit-box;
@@ -2679,7 +2656,7 @@ input {
     gap: 7px;
   }
   .quote__text {
-    font-size: 32px;
+    font-size: 2em;
   }
   .quote__member {
     display: -webkit-box;
@@ -2729,7 +2706,7 @@ input {
   .services__title {
     margin-bottom: 40px;
 
-    font-size: 32px;
+    font-size: 2em;
   }
 }
 @media (max-width: 991.8px) and (min-width: 840px) {
@@ -2749,7 +2726,7 @@ input {
   .banner-team__title {
     letter-spacing: 45px;
 
-    font-size: 80px;
+    font-size: 5em;
   }
   .services__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -2810,11 +2787,10 @@ input {
     gap: 16px;
   }
   .quality__title {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2em;
   }
   .quality__text {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 26px;
   }
   .achievements__grid {
@@ -2828,36 +2804,33 @@ input {
     gap: 25px;
   }
   .services-item__title-link {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 21px;
   }
   .services-item__img {
     width: 64px;
   }
   .services-item__description {
-    font-size: 16px;
     line-height: 22px;
   }
   .services-description {
     margin-bottom: 37px;
   }
   .services-description__title {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2em;
   }
   .services-description__text {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 26px;
   }
   .services-content__title {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 21px;
   }
   .team__title {
     padding: 23px 0 20px;
 
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2em;
   }
   .member {
     margin-bottom: 40px;
@@ -2872,8 +2845,7 @@ input {
     gap: 15px;
   }
   .member__name {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2em;
   }
   .member__contacts {
     -webkit-box-align: start;
@@ -2900,19 +2872,17 @@ input {
   .publication__attention {
     margin-bottom: 26px;
 
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2em;
   }
   .publication-item__title {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 1.375em;
   }
   .publication-item__date {
     margin-bottom: 11px;
     padding-bottom: 17px;
   }
   .publication-item__subtitle {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 21px;
   }
   .publication-item__note {
@@ -2961,7 +2931,7 @@ input {
   .banner-team__title {
     letter-spacing: 20px;
 
-    font-size: 55px;
+    font-size: 3.43em;
   }
   .team__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -3023,7 +2993,7 @@ input {
     background-color: #ededf7;
   }
   .header-logo__page {
-    font-size: 19px;
+    font-size: 1.18em;
   }
   .header-logo__page::before {
     width: 12px;
@@ -3040,21 +3010,25 @@ input {
     row-gap: 11px;
   }
   .cases__description {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 21px;
   }
   .about-description__title {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2em;
   }
   .about-description__text {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 26px;
+  }
+  .banner-team__title {
+    letter-spacing: 7px;
+
+    font-size: 2em;
   }
   .services__title {
     margin-bottom: 20px;
 
-    font-size: 32px;
+    font-size: 2em;
   }
   .services-description {
     -webkit-box-align: start;
@@ -3100,7 +3074,7 @@ input {
     padding-top: 20px;
   }
   .topics__title {
-    font-size: 32px;
+    font-size: 2em;
   }
   .topics__action {
     padding: 21px 0 41px;
@@ -3138,8 +3112,7 @@ input {
     width: 100%;
   }
   .contacts-form__title {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 1.375em;
   }
   .footer__flex {
     -webkit-box-align: center;
@@ -3179,11 +3152,10 @@ input {
 }
 @media (max-width: 381.8px) {
   .team__name-link {
-    font-size: 16px;
     line-height: 13px;
   }
   .team__position-link {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 20px;
   }
 }

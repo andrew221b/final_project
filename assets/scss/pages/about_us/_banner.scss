@@ -1,7 +1,7 @@
 @use "../../mixins" as *;
 @use "../../presets" as *;
 
- .banner-team {
+.banner-team {
   position: relative;
   display: flex;
   justify-content: center;
@@ -36,17 +36,22 @@
 
     @include lg-min {
       letter-spacing: 63px;
-      font-size: 96px;
+      font-size: 6em;
     }
 
     @include lg-md {
       letter-spacing: 45px;
-      font-size: 80px;
+      font-size: 5em;
     }
 
     @include md-sm {
       letter-spacing: 20px;
-      font-size: 55px;
+      font-size: 3.43em;
+    }
+
+    @include sm {
+      font-size: 2em;
+      letter-spacing: 7px;
     }
   }
 }

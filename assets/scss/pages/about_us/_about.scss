@@ -36,13 +36,11 @@
       @include gradient;
 
       @include sm-min {
-        font-size: 42px;
-        line-height: 50px;
+        font-size: 2.625em;
       }
 
       @include sm {
-        font-size: 32px;
-        line-height: 38px;
+        font-size: 2em;
       }
     }
 
@@ -50,12 +48,12 @@
       padding-top: 20px;
 
       @include sm-min {
-        font-size: 21px;
+        font-size: 1.3em;
         line-height: 30px;
       }
 
       @include sm {
-        font-size: 18px;
+        font-size: 1.125em;
         line-height: 26px;
       }
     }
@@ -86,7 +84,7 @@
     }
 
     &__number {
-      font-size: 36px;
+      font-size: 2.25em;
       line-height: 42px;
       font-weight: bold;
       @include gradient;
@@ -109,7 +107,7 @@
     }
 
     &__text {
-      font-size: 18px;
+      font-size: 1.125em;
       line-height: 21px;
       color: $color-main;
       padding-top: 9px;

@@ -50,8 +50,7 @@
       position: relative;
 
       @include lg-min {
-        font-size: 42px;
-        line-height: 50px;
+        font-size: 2.625em;
         text-align: right;
       }
 
@@ -62,8 +61,7 @@
         white-space: nowrap;
         letter-spacing: 1px;
         text-transform: uppercase;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 0.875em;
         @include gradient2;
       }
 
@@ -114,13 +112,13 @@
       margin-bottom: 20px;
 
       @include lg-min {
-        font-size: 32px;
+        font-size: 2em;
 
       }
 
       @include lg {
         margin-bottom: 15px;
-        font-size: 22px;
+        font-size: 1.375em;
       }
     }
 
@@ -129,12 +127,12 @@
       color: $color-white;
 
       @include lg-min {
-        font-size: 21px;
+        font-size: 1.31em;
       }
 
       @include lg {
         margin-bottom: 20px;
-        font-size: 18px;
+        font-size: 1.125em;
       }
     }
 

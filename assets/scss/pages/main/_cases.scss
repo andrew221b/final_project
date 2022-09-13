@@ -28,8 +28,7 @@
   }
 
   &__title {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 0.875em;
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -74,18 +73,18 @@
     font-weight: 500;
 
     @include sm-min {
-      font-size: 24px;
+      font-size: 1.5em;
       line-height: 28px;
     }
 
     @include sm {
-      font-size: 18px;
+      font-size: 1.125em;
       line-height: 21px;
     }
   }
 
   &__partner {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 26px;
     color: $color-grey-text;
   }

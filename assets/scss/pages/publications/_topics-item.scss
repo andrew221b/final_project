@@ -36,11 +36,11 @@
 
   &__link {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 21px;
     color: $color-action-reg;
     transition: .25s;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
 
     &:hover {
@@ -50,7 +50,7 @@
 
   &__date {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -63,7 +63,6 @@
   }
 
   &__text {
-    font-size: 16px;
     line-height: 22px;
     padding-top: 20px;
     border-top: 4px solid #E6E6F0;

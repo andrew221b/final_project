@@ -67,11 +67,11 @@
     display: inline-block;
 
     @include sm-min {
-      font-size: 42px;
+      font-size: 2.625em;
     }
 
     @include sm {
-      font-size: 32px;
+      font-size: 2em;
     }
   }
 

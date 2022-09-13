@@ -13,12 +13,12 @@
     margin-bottom: 22px;
 
     @include md-min {
-      font-size: 24px;
+      font-size: 1.5em;
       line-height: 28px;
     }
 
     @include md {
-      font-size: 18px;
+      font-size: 1.125em;
       line-height: 21px;
     }
   }
@@ -36,7 +36,7 @@
   }
 
   &__direction {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 26px;
     color: $color-white;
     position: relative;

@@ -16,12 +16,12 @@
     transition: .3s ease-in-out;
 
     @include md-min {
-      font-size: 24px;
+      font-size: 1.5em;
       line-height: 28px;
     }
 
     @include md {
-      font-size: 18px;
+      font-size: 1.125em;
       line-height: 21px;
     }
 
@@ -50,12 +50,11 @@
     }
 
     @include md-min {
-      font-size: 18px;
+      font-size: 1.125em;
       line-height: 26px;
     }
 
     @include md {
-      font-size: 16px;
       line-height: 22px;
     }
   }

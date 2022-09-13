@@ -20,19 +20,16 @@
     @include gradient;
 
     @include sm-min {
-      font-size: 32px;
-      line-height: 38px;
+      font-size: 2em;
     }
 
     @include sm {
-      font-size: 22px;
-      line-height: 26px;
+      font-size:1.375em;
     }
   }
 
   &__subtitle {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 0.875em;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $color-grey-text;
@@ -65,7 +62,7 @@
     outline: none;
     border: none;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 26px;
     height: 100%;
     width: 100%;

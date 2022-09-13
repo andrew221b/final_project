@@ -18,18 +18,16 @@
     font-weight: 500;
 
     @include md-min {
-      font-size: 32px;
-      line-height: 38px;
+      font-size: 2em;
     }
 
     @include md {
-      font-size: 22px;
-      line-height: 26px;
+      font-size: 1.375em;
     }
   }
 
   &__date {
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -49,7 +47,7 @@
   }
 
   &__text {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 26px;
     margin-bottom: 8px;
   }
@@ -69,18 +67,17 @@
     margin-bottom: 9px;
 
     @include md-min {
-      font-size: 24px;
+      font-size: 1.5em;
       line-height: 28px;
     }
 
     @include md {
-      font-size: 18px;
+      font-size: 1.125em;
       line-height: 21px;
     }
   }
 
   &__note {
-    font-size: 16px;
     line-height: 22px;
     color: $color-grey-text;
     align-self: center;
@@ -108,7 +105,7 @@
   }
 
   &__order {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 26px;
     counter-increment: li;
     margin-bottom: 15px;
