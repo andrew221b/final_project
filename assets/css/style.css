@@ -1069,8 +1069,8 @@ input {
   background: #e7e7f2;
 }
 .services--open {
-  background: -o-linear-gradient(250deg, #323264 11%, #323264 65%, #643e72 90%);
-  background:    linear-gradient(200deg, #323264 11%, #323264 65%, #643e72 90%);
+  background: -o-linear-gradient(250deg, #323264 11%, #323264 68%, #643e72 90%);
+  background:    linear-gradient(200deg, #323264 11%, #323264 68%, #643e72 90%);
 }
 .services__page {
   position: relative;
