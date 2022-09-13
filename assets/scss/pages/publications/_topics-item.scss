@@ -5,16 +5,15 @@
   background-color: $color-white;
   border-radius: 8px;
   margin-bottom: 40px;
-  max-width: 413px;
-  min-height: 236px;
+  width: 100%;
   transition: .25s ease-out;
-  display: inline-block;
+  display: inline-flex;
 
-  @include lg-min {
-    &:hover {
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
+@include lg-min {
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
+}
 
   @include sm-min {
     margin-bottom: 40px;
@@ -72,7 +71,6 @@
     color: black;
     font-weight: 400;
     font-size: 16px;
-
     @include sm {
       display: none;
     }
@@ -80,8 +78,6 @@
 
   &__pic {
     order: -1;
-    max-width: 413px;
-    max-height: 236px;
   }
 
   &__img {
