@@ -1618,6 +1618,10 @@ input {
 }
 
 .topics-item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+
   width: 100%;
   margin-bottom: 40px;
 
@@ -1672,6 +1676,7 @@ input {
   color: black;
   border-top: 4px solid #e6e6f0;
 
+  font-size: 16px;
   font-weight: 400;
   line-height: 22px;
 }
