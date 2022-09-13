@@ -2210,9 +2210,9 @@ input {
 
     content: "";
 
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 245, 250, 0)), color-stop(86.5%, #f5f5fa));
-    background: -o-linear-gradient(top, rgba(245, 245, 250, 0) 0%, #f5f5fa 86.5%);
-    background:    linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #f5f5fa 86.5%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 245, 250, 0)), color-stop(76.5%, #f5f5fa));
+    background: -o-linear-gradient(top, rgba(245, 245, 250, 0) 0%, #f5f5fa 76.5%);
+    background:    linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #f5f5fa 76.5%);
   }
   .topics__layout {
     padding-top: 40px;
