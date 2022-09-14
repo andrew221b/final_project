@@ -49,6 +49,10 @@ button {
   cursor: pointer;
 }
 
+address {
+  font-style: normal;
+}
+
 html {
   font-family: "TT Norms", sans-serif;
   font-size: 16px;
@@ -2087,7 +2091,6 @@ input {
   color: #323264;
 
   font-weight: 500;
-  font-style: normal;
   line-height: 19px;
 
   grid-area: ad;
