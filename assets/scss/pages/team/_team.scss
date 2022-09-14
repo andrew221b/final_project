@@ -57,7 +57,6 @@
 
     @include sm {
       flex-basis: 50%;
-      flex-grow: 1;
       align-items: flex-start;
       justify-content: center;
       flex-direction: column;
@@ -68,13 +67,17 @@
     }
   }
 
-  &__item {
+  &__link {
     display: flex;
     flex-direction: column;
+    transition: .25s;
 
-    &:hover a:not(.team__position-link) {
-      cursor: pointer;
+    &:hover .team__name {
       color: $color-accent;
+    }
+
+    &:hover .team__move>img {
+      filter: invert(4%) saturate(400%) hue-rotate(10deg) brightness(99%) contrast(105%);
     }
 
     @include sm {
@@ -85,10 +88,11 @@
 
   &__pic {
     max-width: 413px;
+    min-width: 100px;
     flex-basis: 30%;
     flex-grow: 1;
 
-    &-link>img {
+    &>img {
       width: 100%;
       object-fit: cover;
 
@@ -106,29 +110,32 @@
     }
   }
 
-  &__name-link {
+  &__info {
+    @include sm {
+      max-width: 190px;
+    }
+  }
+
+  &__name {
     font-size: 1.125em;
     line-height: 21px;
     color: $color-main;
     font-weight: 500;
-    transition: .25s;
 
-    @include xs {
-      line-height: 13px;
+    @media (max-width: 365px) {
+      font-size: $font-size;
     }
   }
 
   &__position {
     padding-top: 6px;
+    line-height: 22px;
+    color: $color-grey-text;
 
-    &-link {
-      line-height: 22px;
-      color: $color-grey-text;
-
-      @include xs {
-        font-size: 0.875em;
-        line-height: 20px;
-      }
+    @include xs {
+      font-size: 0.875em;
+      line-height: 20px;
     }
+
   }
 }
