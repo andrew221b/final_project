@@ -1337,8 +1337,8 @@ input {
   color: #f0145a;
 }
 .team__link:hover .team__move > img {
-  -webkit-filter: invert(4%) saturate(400%) hue-rotate(10deg) brightness(99%) contrast(105%);
-          filter: invert(4%) saturate(400%) hue-rotate(10deg) brightness(99%) contrast(105%);
+  -webkit-filter: invert(4%) saturate(200%) brightness(99%) contrast(106%);
+          filter: invert(4%) saturate(200%) brightness(99%) contrast(106%);
 }
 .team__pic {
   -webkit-box-flex: 1;

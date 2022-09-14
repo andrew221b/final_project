@@ -76,9 +76,8 @@
       color: $color-accent;
     }
 
-    &:hover .team__move>img {
-      filter: invert(4%) saturate(400%) hue-rotate(10deg) brightness(99%) contrast(105%);
-    }
+   &:hover .team__move>img {
+    filter: invert(4%) saturate(200%) brightness(99%) contrast(106%);    }
 
     @include sm {
       flex-direction: row;
