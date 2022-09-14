@@ -1128,6 +1128,8 @@ input {
           transition: 0.3s ease-in-out;
 
   color: #24a3ff;
+
+  font-weight: 500;
 }
 .services-item__title-link:hover {
   color: #f0145a;

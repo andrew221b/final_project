@@ -14,6 +14,7 @@
   &__title-link {
     color: $color-action-reg;
     transition: .3s ease-in-out;
+    font-weight: 500;
 
     @include md-min {
       font-size: 1.5em;
