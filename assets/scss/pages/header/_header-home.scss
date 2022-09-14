@@ -43,8 +43,18 @@
     }
 
     @media (max-height: 590px) {
-      bottom: -40px;
+      bottom: -50px;
       transform: scale(0.8);
+    }
+
+    @media (max-height: 470px) {
+      bottom: -77px;
+      transform: scale(0.7);
+    }
+
+    @media (max-height: 400px) {
+      bottom: -120px;
+      transform: scale(0.6);
     }
   }
 
@@ -55,6 +65,15 @@
     position: relative;
     text-align: center;
     max-width: 623px;
+
+    @media (max-height: 520px) {
+      top: 25px;
+    }
+
+    @media (max-height: 380px) {
+      top: 50px;
+      font-size: 1.5em;
+    }
   }
 
   &__btn {
